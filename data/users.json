@@ -1,0 +1,34 @@
+{
+  "Usuario valido_Contraseña valida": {
+    "username": "2025829SERGI",
+    "password": "123123"
+  },
+  "Usuario valido_Contraseña invalida": {
+    "username": "2025829SERGI",
+    "password": "xxx"
+  },
+  "Usuario valido_Contraseña > 10 caracteres": {
+    "username": "2025829SERGI",
+    "password": "12345678901"
+  },
+  "Usuario valido_Contraseña <= 10 caracteres e invalida": {
+    "username": "2025829SERGI",
+    "password": "1234abc"
+  },
+  "Usuario invalido_Contraseña valida": {
+    "username": "no_existe",
+    "password": "123123"
+  },
+  "Usuario invalido_Contraseña invalida": {
+    "username": "no_existe",
+    "password": "xxx"
+  },
+  "Usuario > 22 caracteres_Contraseña valida": {
+    "username": "12345678901234567890123",
+    "password": "123123"
+  },
+  "Usuario <= 22 caracteres y valido_Contraseña valida": {
+    "username": "2025829SERGI",
+    "password": "123123"
+  }
+}
