@@ -1,8 +1,6 @@
 
 import { test as base } from "@playwright/test";
 import { LoginPage } from "../pages/loginPage.js";
-import { BoardPage } from "../pages/boardPage.js";
-import { TableroPage } from "../pages/tableListPage.js";
 import dotenv from "dotenv";
 
 dotenv.config();
