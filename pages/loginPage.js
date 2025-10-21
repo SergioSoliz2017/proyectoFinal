@@ -23,13 +23,27 @@ export class LoginPage {
       await this.page.click(this.loginButton);
     }
   }
-  async getErrorMessage() {
-    const locator = this.page.locator(this.error_msg);
+  async getErrorMessages() {
+    const locators = this.page.locator(this.error_msg);
     try {
-      await locator.waitFor({ state: "visible", timeout: 3000 });
-      return await locator.textContent();
+      await locators.first().waitFor({ state: "visible", timeout: 3000 });
+      const count = await locators.count();
+      const messages = [];
+      for (let i = 0; i < count; i++) {
+        const element = locators.nth(i);
+        if (await element.isVisible()) {
+          const text = await element.textContent();
+          if (text) {
+            const trimmedText = text.trim();
+            if (trimmedText !== "Inicio Correcto") {
+              messages.push(trimmedText);
+            }
+          }
+        }
+      }
+      return messages;
     } catch (e) {
-      return "";
+      return [];
     }
   }
 

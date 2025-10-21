@@ -1,0 +1,62 @@
+{
+  "caso_1": {
+    "descripcion": "descuento valido - pago valido",
+    "descuento": "10",
+    "pago": "500"
+  },
+  "caso_2": {
+    "descripcion": "descuento valido - pago negativo",
+    "descuento": "8",
+    "pago": "-200"
+  },
+  "caso_3": {
+    "descripcion": "descuento valido - pago con simbolo - +",
+    "descuento": "15",
+    "pago": "+300"
+  },
+  "caso_4": {
+    "descripcion": "descuento porcentaje > 100% - pago negativo",
+    "descuento": "120",
+    "pago": "-400"
+  },
+  "caso_5": {
+    "descripcion": "descuento porcentaje > 100% - pago con simbolo - +",
+    "descuento": "150",
+    "pago": "+250"
+  },
+  "caso_6": {
+    "descripcion": "descuento porcentaje > 100% - pago valido",
+    "descuento": "180",
+    "pago": "600"
+  },
+  "caso_7": {
+    "descripcion": "descuento monetario > precio - pago con simbolo - +",
+    "descuento": "2000",
+    "pago": "+700"
+  },
+  "caso_8": {
+    "descripcion": "descuento monetario > precio - pago valido",
+    "descuento": "1500",
+    "pago": "800"
+  },
+  "caso_9": {
+    "descripcion": "descuento monetario > precio - pago negativo",
+    "descuento": "2500",
+    "pago": "-900"
+  },
+  "caso_10": {
+    "descripcion": "descuento con simbolo - + - pago valido",
+    "descuento": "+15",
+    "pago": "500"
+  },
+  "caso_11": {
+    "descripcion": "descuento con simbolo - + - pago negativo",
+    "descuento": "-10",
+    "pago": "-300"
+  },
+  "caso_12": {
+    "descripcion": "descuento con simbolo - + - pago con simbolo - +",
+    "descuento": "+8",
+    "pago": "+200"
+  }
+}

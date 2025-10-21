@@ -39,40 +39,30 @@ export class RegistroEstudiantePage {
   }
 
   async llenarDatos(estudiante) {
-    try {
-      await this.page.fill(this.nombreEstudianteInput, estudiante.nombre);
-      await this.page.fill(this.apellidoEstudianteInput, estudiante.apellido);
-      await this.page.fill(
-        this.fechaNacimientoEstudianteInput,
-        estudiante.fechaNacimiento
-      );
-      await this.page.selectOption(this.generoSelect, estudiante.genero);
-    } catch (e) {
-      console.error("Error llenando datos:", e);
-      throw e;
-    }
+    await this.page.fill(this.nombreEstudianteInput, estudiante.nombre);
+    await this.page.fill(this.apellidoEstudianteInput, estudiante.apellido);
+    await this.page.fill(
+      this.fechaNacimientoEstudianteInput,
+      estudiante.fechaNacimiento
+    );
+    await this.page.selectOption(this.generoSelect, estudiante.genero);
   }
   async llenarDatosOpcionales(estudiante) {
-    try {
-      await this.page.fill(this.nombreEstudianteInput, "Sergio");
-      await this.page.fill(this.apellidoEstudianteInput, "Soliz");
-      await this.page.fill(this.fechaNacimientoEstudianteInput, "2000-03-17");
-      await this.page.selectOption(this.generoSelect, "Hombre");
-      await this.page.fill(this.DireccionInput, estudiante.direccion);
-      await this.page.fill(this.paisInput, estudiante.pais);
-      await this.page.fill(this.departamentoInput, estudiante.departamento);
-      await this.page.fill(this.cuidadInput, estudiante.ciudad);
-      await this.page.fill(this.colegioInput, estudiante.colegio);
-      await this.page.selectOption(this.turnoSelect, estudiante.turno);
-      await this.page.selectOption(this.cursoSelect, estudiante.curso);
-      await this.page.selectOption(
-        this.tipoColegioSelect,
-        estudiante.tipoColegio
-      );
-    } catch (e) {
-      console.error("Error llenando datos:", e);
-      throw e;
-    }
+    await this.page.fill(this.nombreEstudianteInput, "Sergio");
+    await this.page.fill(this.apellidoEstudianteInput, "Soliz");
+    await this.page.fill(this.fechaNacimientoEstudianteInput, "2000-03-17");
+    await this.page.selectOption(this.generoSelect, "Hombre");
+    await this.page.fill(this.DireccionInput, estudiante.direccion);
+    await this.page.fill(this.paisInput, estudiante.pais);
+    await this.page.fill(this.departamentoInput, estudiante.departamento);
+    await this.page.fill(this.cuidadInput, estudiante.ciudad);
+    await this.page.fill(this.colegioInput, estudiante.colegio);
+    await this.page.selectOption(this.turnoSelect, estudiante.turno);
+    await this.page.selectOption(this.cursoSelect, estudiante.curso);
+    await this.page.selectOption(
+      this.tipoColegioSelect,
+      estudiante.tipoColegio
+    );
   }
   async getErrorMessages() {
     const locators = this.page.locator(this.error_msg);

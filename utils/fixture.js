@@ -3,7 +3,8 @@ import { LoginPage } from "../pages/loginPage.js";
 import dotenv from "dotenv";
 import { RegistroEstudiantePage } from "../pages/registroEstudiantePage.js";
 import { Logger } from "./helper.js";
-
+import { TieneTutorPage } from "../pages/tieneTutorPage.js";
+import { RegistroTutorPage } from "../pages/registroTutorPage.js";
 dotenv.config();
 
 export const test = base.extend({
@@ -24,7 +25,7 @@ export const test = base.extend({
     const registro = new RegistroEstudiantePage(loginFixture);
     Logger.info(`Entrando registro datos estudiante`);
     await registro.gotoRegistro();
-    Logger.info("Llenar datos");
+    Logger.info("Llenar datos estudiante");
     Logger.debug({
       nombre: "Carlos",
       apellido: "Perez",
@@ -34,7 +35,7 @@ export const test = base.extend({
     await registro.llenarDatos({
       nombre: "Carlos",
       apellido: "Perez",
-      fechaNacimiento: "2000-01-01",
+      fechaNacimiento: "2019-01-01",
       genero: "Hombre",
     });
     Logger.info("Datos llenado");
@@ -43,6 +44,44 @@ export const test = base.extend({
     await registro.verificarTieneTutor();
     await use(loginFixture);
   },
+  datosTutores: async ({ datosEstudiantes }, use) => {
+    Logger.info(`Test si tiene tutor`);
+    const tieneTutor = new TieneTutorPage(datosEstudiantes);
+    Logger.info(`Seleccionar opcion Si`);
+    await tieneTutor.siTieneTutor();
+    Logger.info(`Verificar campos tutor vacios`);
+    await tieneTutor.verificarSiTieneTutor();
+    await use(datosEstudiantes);
+  },
+  cursos: async ({ datosTutores }, use) => {
+    const registro = new RegistroTutorPage(datosTutores);
+    Logger.info("Llenar datos tutor");
+    Logger.debug({
+      nombre: "Carlos",
+      apellido: "Perez",
+      fechaNacimiento: "2000-01-01",
+      relacion: "Padre",
+      correo: "carlos@gmail.com",
+      genero: "Hombre",
+    });
+    await registro.llenarDatos({
+      nombre: "Carlos",
+      apellido: "Perez",
+      fechaNacimiento: "2000-01-01",
+      relacion: "Padre",
+      correo: "carlos@gmail.com",
+      genero: "Hombre",
+    });
+    Logger.info("Datos llenado");
+    Logger.info("Ir registrar cursos");
+    await registro.gotoCursos();
+    Logger.info("Verificar registro cursos");
+    await registro.verificarRegistroCursos();
+    await use(datosTutores);
+  },
+  listas: async ({ loginFixture }, use) => {
+      
+  }
 });
 
 export const expect = base.expect;

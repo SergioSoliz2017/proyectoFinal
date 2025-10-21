@@ -68,11 +68,11 @@ export class TieneTutorPage {
       .selectOption({ value: relacion });
   }
 
-  async gotoCursos() {
-      
+  async gotoCursos() { 
     await this.page
       .locator("button", { hasText: "Tutor seleccionado" })
       .click();
+      await expect(this.page.locator("div", { hasText: /^Registro de cursos$/ })).toBeVisible();
   }
 
   async getErrorMessages() {

@@ -21,7 +21,7 @@
     "genero": "Seleccione genero"
   },
   "caso_4": {
-    "descripcion": "nombre vacio - apellido >40 - fecha nacimiento < 5 años - genero Mujer",
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento < 5 años - genero Mujer",
     "nombre": "",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "2022-04-15",
@@ -63,42 +63,42 @@
     "genero": "Mujer"
   },
   "caso_10": {
-    "descripcion": "nombre >40 - apellido >40 - fecha nacimiento valido - genero Hombre",
+    "descripcion": "nombre > 40 - apellido > 40 - fecha nacimiento valido - genero Hombre",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "2015-06-10",
     "genero": "Hombre"
   },
   "caso_11": {
-    "descripcion": "nombre >40 - apellido < 3 - fecha nacimiento vacio - genero no seleccionado",
+    "descripcion": "nombre > 40 - apellido < 3 - fecha nacimiento vacio - genero no seleccionado",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "Xu",
     "fechaNacimiento": "",
     "genero": "Seleccione genero"
   },
   "caso_12": {
-    "descripcion": "nombre >40 - apellido con simbolos - fecha nacimiento futura - genero Mujer",
+    "descripcion": "nombre > 40 - apellido con simbolos - fecha nacimiento futura - genero Mujer",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "Lopez!$",
     "fechaNacimiento": "2030-01-01",
     "genero": "Mujer"
   },
   "caso_13": {
-    "descripcion": "nombre >40 - apellido con numeros - fecha nacimiento < 5 años - genero no seleccionado",
+    "descripcion": "nombre > 40 - apellido con numeros - fecha nacimiento < 5 años - genero no seleccionado",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "Ramos22",
     "fechaNacimiento": "2022-04-15",
     "genero": "Seleccione genero"
   },
   "caso_14": {
-    "descripcion": "nombre >40 - apellido valido - fecha nacimiento futura - genero Hombre",
+    "descripcion": "nombre > 40 - apellido valido - fecha nacimiento futura - genero Hombre",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "Perez",
     "fechaNacimiento": "2030-01-01",
     "genero": "Hombre"
   },
   "caso_15": {
-    "descripcion": "nombre >40 - apellido vacio - fecha nacimiento < 5 años - genero no seleccionado",
+    "descripcion": "nombre > 40 - apellido vacio - fecha nacimiento < 5 años - genero no seleccionado",
     "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "apellido": "",
     "fechaNacimiento": "2022-04-15",
@@ -140,7 +140,7 @@
     "genero": "Seleccione genero"
   },
   "caso_21": {
-    "descripcion": "nombre < 3 - apellido >40 - fecha nacimiento vacio - genero Mujer",
+    "descripcion": "nombre < 3 - apellido > 40 - fecha nacimiento vacio - genero Mujer",
     "nombre": "Li",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "",
@@ -175,7 +175,7 @@
     "genero": "Seleccione genero"
   },
   "caso_26": {
-    "descripcion": "nombre con simbolos - apellido >40 - fecha nacimiento futura - genero Hombre",
+    "descripcion": "nombre con simbolos - apellido > 40 - fecha nacimiento futura - genero Hombre",
     "nombre": "Ana@#",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "2030-01-01",
@@ -224,7 +224,7 @@
     "genero": "Seleccione genero"
   },
   "caso_33": {
-    "descripcion": "nombre con numeros - apellido >40 - fecha nacimiento < 5 años - genero Mujer",
+    "descripcion": "nombre con numeros - apellido > 40 - fecha nacimiento < 5 años - genero Mujer",
     "nombre": "Juan123",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "2022-04-15",
@@ -245,7 +245,7 @@
     "genero": "Hombre"
   },
   "caso_36": {
-    "descripcion": "nombre valido - apellido >40 - fecha nacimiento valido - genero Mujer",
+    "descripcion": "nombre valido - apellido > 40 - fecha nacimiento valido - genero Mujer",
     "nombre": "Carlos",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "2015-06-10",
@@ -273,7 +273,7 @@
     "genero": "Seleccione genero"
   },
   "caso_40": {
-    "descripcion": "nombre vacio - apellido >40 - fecha nacimiento vacio - genero Mujer",
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento vacio - genero Mujer",
     "nombre": "",
     "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
     "fechaNacimiento": "",

@@ -36,8 +36,8 @@ test.describe("Login tests", () => {
         expect(loggedIn).toBe(true);
         Logger.info("Login exitoso");
       } else {
-        const errorMsg = await login.getErrorMessage();
-        expect(errorMsg).not.toBe("");
+        const errorMsg = await login.getErrorMessages();
+        expect(errorMsg.length).toBeGreaterThan(0);
         Logger.error("Login fallido");
         Logger.error(`Mensaje de error para ${key}: ${errorMsg}`);
         const typedValueUserName = await page
