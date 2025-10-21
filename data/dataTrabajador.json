@@ -1,0 +1,199 @@
+[
+  { "tipeTest": "datos vacios",  
+    "nombre": "", 
+    "fecha": "" ,
+    "rol": "", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 4
+    },
+
+    { "tipeTest": "datos validos",  
+    "nombre": "Miguel Teran", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "miguel123",
+    "pased": true,
+    "errores": 0
+    },
+
+    { "tipeTest": "datos validos nombre vacio",  
+    "nombre": "", 
+    "fecha": "1995-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "secretaria123",
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "sin nombre y fecha invalida",  
+    "nombre": "", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "123123",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "sin datos y contraseña < a 3 caracteres",  
+    "nombre": "", 
+    "fecha": "" ,
+    "rol": "", 
+    "contraseña": "12",
+    "pased": false,
+    "errores": 4
+    },
+
+    { "tipeTest": "sin nombre ni contraseña",  
+    "nombre": "", 
+    "fecha": "1995-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con contraseña < a 3 caracteres",  
+    "nombre": "Raul Quiroga", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "1",
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "fecha invalida sin rol ni contraseña",  
+    "nombre": "Maria Quiroga", 
+    "fecha": "2225-09-11" ,
+    "rol": "", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 3
+    },
+
+    { "tipeTest": "sin rol",  
+    "nombre": "Maria Quiroga", 
+    "fecha": "1995-09-11" ,
+    "rol": "", 
+    "contraseña": "maria123",
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "sin fecha y contraseña > a 15 caracteres",  
+    "nombre": "Selena Gomez", 
+    "fecha": "" ,
+    "rol": "Maestro", 
+    "contraseña": "--selena123456789--",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre mayor a 30 caracteres",  
+    "nombre": "JoseMaria Nieves Robertina Quiroga Tercerrina", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "30caracteres",
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con nombre y contraseña mayor a caracteres permitidos",  
+    "nombre": "JoseMaria Nieves Robertina Quiroga Tercerrina", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "123oiufs-da30caracteres-",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre mayor y contraseña menor a caracteres permitidos",  
+    "nombre": "JoseMaria Nieves Robertina Quiroga Tercerrina", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "1",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre < a 3 caracteres y sin contraseña",  
+    "nombre": "UN", 
+    "fecha": "1995-09-11" ,
+    "rol": "Maestro", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre < a 3 caracteres y con contraseña",  
+    "nombre": "UN", 
+    "fecha": "" ,
+    "rol": "", 
+    "contraseña": "contraseña",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre < a 3 caracteres y contraseña > a 15 caracteres",  
+    "nombre": "NA", 
+    "fecha": "1995-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "contraseñacontraseñacontraseña",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre y contraseña < a 3 caracteres",  
+    "nombre": "NA", 
+    "fecha": "1995-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "no",
+    "pased": false,
+    "errores": 2
+    },
+
+    { "tipeTest": "con nombre numerico",  
+    "nombre": "1N3SS", 
+    "fecha": "1995-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "contraseñaines",
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con nombre numerico sin rol y contrraseña menor al permitido",  
+    "nombre": "1N3SS", 
+    "fecha": "1995-09-11" ,
+    "rol": "", 
+    "contraseña": "c",
+    "pased": false,
+    "errores": 3
+    },
+
+    { "tipeTest": "con nombre numerico sin fecha y contrraseña mayor al permitido",  
+    "nombre": "1N3SS", 
+    "fecha": "" ,
+    "rol": "Secretaria", 
+    "contraseña": "cSesadfa111sdfcre111asd22323ftaa111aria",
+    "pased": false,
+    "errores": 3
+    },
+
+    { "tipeTest": "con nombre numerico sin rol ni contraseña",  
+    "nombre": "1N3SS", 
+    "fecha": "1995-09-11" ,
+    "rol": "", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 3
+    },
+
+    { "tipeTest": "con nombre numerico sin contraseña y fecha invalida",  
+    "nombre": "1N3SS", 
+    "fecha": "2295-09-11" ,
+    "rol": "Secretaria", 
+    "contraseña": "",
+    "pased": false,
+    "errores": 3
+    }
+]

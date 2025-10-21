@@ -1,0 +1,274 @@
+[
+  {
+    "tipeTest": "todos los datos válidos",
+    "nombre": "Curso01",
+    "precio": "50",
+    "cantidad": "20",
+    "dias": ["Martes"],
+    "hora": "15:00",
+    "pased": true,
+    "errores": 0
+  },
+
+  {
+    "tipeTest": "nombre válido, precio negativo, cantidad menor a 15, varios días, sin hora",
+    "nombre": "Grupo02",
+    "precio": "-15",
+    "cantidad": "10",
+    "dias": ["Lunes", "Miercoles"],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre válido, precio con letras, cantidad mayor a 30, sin días ni hora",
+    "nombre": "Grupo03",
+    "precio": "50e",
+    "cantidad": "35",
+    "dias": [],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre válido, precio mayor a 999, cantidad válida, un día, sin hora",
+    "nombre": "Grupo04",
+    "precio": "1200",
+    "cantidad": "20",
+    "dias": ["Jueves"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre menor a 3 caracteres, precio negativo, cantidad mayor a 30, un día, hora válida",
+    "nombre": "Jo",
+    "precio": "-5",
+    "cantidad": "40",
+    "dias": ["Viernes"],
+    "hora": "10:00",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre corto, precio con letras, cantidad válida, varios días, hora válida",
+    "nombre": "Lu",
+    "precio": "20e",
+    "cantidad": "25",
+    "dias": ["Lunes", "Miercoles"],
+    "hora": "08:00",
+    "pased": false,
+    "errores": 2
+  },
+  
+  {
+    "tipeTest": "nombre corto, precio mayor a 999, cantidad vacía, un día, sin hora",
+    "nombre": "Ra",
+    "precio": "1500",
+    "cantidad": "",
+    "dias": ["Sabado"],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre corto, precio vacío, cantidad cero, varios días, hora válida",
+    "nombre": "Lo",
+    "precio": "",
+    "cantidad": "0",
+    "dias": ["Martes", "Viernes"],
+    "hora": "07:00",
+    "pased": false,
+    "errores": 2
+  },
+  {
+    "tipeTest": "nombre corto, precio cero, cantidad menor a 15, sin días ni hora",
+    "nombre": "Mi",
+    "precio": "0",
+    "cantidad": "10",
+    "dias": [],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre largo, precio con letras, cantidad vacía, varios días, sin hora",
+    "nombre": "CursoLargo1",
+    "precio": "40e",
+    "cantidad": "",
+    "dias": ["Lunes", "Jueves"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre largo, precio mayor a 999, cantidad cero, sin días, hora válida",
+    "nombre": "CursoLargo2",
+    "precio": "2000",
+    "cantidad": "0",
+    "dias": [],
+    "hora": "13:00",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre largo, precio vacío, cantidad menor a 15, un día, sin hora",
+    "nombre": "CursoLargo3",
+    "precio": "",
+    "cantidad": "10",
+    "dias": ["Viernes"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre largo, precio cero, cantidad mayor a 30, varios días, sin hora",
+    "nombre": "CursoLargo4",
+    "precio": "0",
+    "cantidad": "35",
+    "dias": ["Martes", "Sabado"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre largo, precio negativo, cantidad válida, un día, sin hora",
+    "nombre": "CursoLargo5",
+    "precio": "-10",
+    "cantidad": "20",
+    "dias": ["Lunes"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre vacío, precio mayor a 999, cantidad menor a 15, varios días, sin hora",
+    "nombre": "",
+    "precio": "2000",
+    "cantidad": "5",
+    "dias": ["Lunes", "Viernes"],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+  {
+    "tipeTest": "nombre vacío, precio vacío, cantidad mayor a 30, un día, sin hora",
+    "nombre": "",
+    "precio": "",
+    "cantidad": "45",
+    "dias": ["Martes"],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre vacío, precio cero, cantidad válida, varios días, sin hora",
+    "nombre": "",
+    "precio": "0",
+    "cantidad": "25",
+    "dias": ["Miercoles", "Sabado"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre vacío, precio negativo, cantidad vacía, varios días, hora válida",
+    "nombre": "",
+    "precio": "-10",
+    "cantidad": "",
+    "dias": ["Martes", "Viernes"],
+    "hora": "09:30",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre vacío, precio con letras, cantidad cero, sin días, hora válida",
+    "nombre": "",
+    "precio": "30e",
+    "cantidad": "0",
+    "dias": [],
+    "hora": "14:00",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre válido, precio vacío, cantidad vacía, varios días, hora válida",
+    "nombre": "Grupo21",
+    "precio": "",
+    "cantidad": "",
+    "dias": ["Lunes", "Miercoles"],
+    "hora": "10:00",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre válido, precio negativo, cantidad cero, un día, hora válida",
+    "nombre": "Grupo22",
+    "precio": "-5",
+    "cantidad": "0",
+    "dias": ["Martes"],
+    "hora": "08:00",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre válido, precio con letras, cantidad menor a 15, un día, sin hora",
+    "nombre": "Grupo23",
+    "precio": "40e",
+    "cantidad": "10",
+    "dias": ["Jueves"],
+    "hora": "",
+    "pased": false,
+    "errores": 3
+  },
+
+  {
+    "tipeTest": "nombre válido, precio mayor a 999, cantidad mayor a 30, varios días, sin hora",
+    "nombre": "Grupo24",
+    "precio": "1500",
+    "cantidad": "40",
+    "dias": ["Miercoles", "Sabado"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  },
+
+  {
+    "tipeTest": "nombre válido, precio válido, cantidad válida, dos días, hora válida",
+    "nombre": "Grupo25",
+    "precio": "100",
+    "cantidad": "25",
+    "dias": ["Lunes", "Viernes"],
+    "hora": "18:00",
+    "pased": true,
+    "errores": 0
+  },
+  
+  {
+    "tipeTest": "nombre válido, precio vacío, cantidad menor a 15, un día, sin hora",
+    "nombre": "Grupo26",
+    "precio": "",
+    "cantidad": "10",
+    "dias": ["Martes"],
+    "hora": "",
+    "pased": false,
+    "errores": 2
+  }
+]

@@ -7,23 +7,23 @@ test("@ui @positive Validar ingreso a la pagina Trabajadores", async ({ loginFix
     const trabajadoresPage = new TrabajadoresPage(loginFixture);
     await trabajadoresPage.gotoTrabajadores();
 });
-
-test("@ui @negative ingresar uusuario nuevo", async ({ loginFixture }) => {
+/*
+test("@ui @smoke ingresar un usuario nuevo", async ({ loginFixture }) => {
     const trabajadoresPage = new TrabajadoresPage(loginFixture);
     await trabajadoresPage.gotoTrabajadores();
-    //await trabajadoresPage.ingresarTrabajador();
-    await trabajadoresPage.verificarTrabajadorPorNombre("Jose Luis")
+    await trabajadoresPage.ingresarTrabajador("Jose Cansejo","1995-09-11","Maestro","contraseña");
+    await trabajadoresPage.verificarTrabajadorPorNombre("Jose Cansejo");
 });
-
+*/
 for (const trabajador of lisTrabajadores) {
-  test(`Crear trabajador con: "${trabajador.tipeTest}"`, async ({ loginFixture }) => {
-    const { page, cardPage } = await setupCardTest(loginFixture);
-    await cardPage.cardActionAddLabel({ color: label.colorLabel, title: label.nameLabel });
-    await cardPage.closeDialogCard();
-
-    const appliedLabel = page
-    .locator(`[data-testid="compact-card-label"][aria-label="Color: ${label.confirmColorLabel}, título: “${label.nameLabel}”"]`)
-    .first();
-  await expect(appliedLabel).toBeVisible();
+  test(`@ui @negative Crear un trabajador con: "${trabajador.tipeTest}"`, async ({ loginFixture }) => {
+    const trabajadoresPage = new TrabajadoresPage(loginFixture);
+    await trabajadoresPage.gotoTrabajadores();
+    await trabajadoresPage.ingresarTrabajador(trabajador.nombre,trabajador.fecha,trabajador.rol,trabajador.contraseña);
+    if (trabajador.pased){
+        await trabajadoresPage.verificarTrabajadorPorNombre(trabajador.nombre);
+    }
+    const errorMsg = await trabajadoresPage.getErrorMessages();
+    expect(errorMsg.length).toBeGreaterThan(trabajador.errores);
   });
 }

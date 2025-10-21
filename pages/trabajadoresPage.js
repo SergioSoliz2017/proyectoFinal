@@ -23,14 +23,23 @@ export class TrabajadoresPage {
         await expect(this.tituloTrabajadores).toBeVisible();
     }
 
-    async ingresarTrabajador() {
+    async ingresarTrabajador(nombre,fecha,rol,contraseña) {
         await this.newTrabajadorButton.click();
         await expect(this.ventanaEmergenteNewTrabajador).toBeVisible();
-        await this.nombreTrabajadorLabel.fill('Jose Luis');
-        await this.fechaTrabajadorLabel.fill('2000-10-14');
-        await this.rolTrabajadorLabel.selectOption('Maestro');
+
+        if(nombre){
+            await this.nombreTrabajadorLabel.fill(`${nombre}`);
+        }
+        if(fecha){
+            await this.fechaTrabajadorLabel.fill(`${fecha}`);
+        }
+        if(rol){
+            await this.rolTrabajadorLabel.selectOption(`${rol}`);
+        }
         //await this.sedeTrabajadorLabel.selectOption('Proyecto Final');
-        await this.contraseñaTrabajadorLabel.fill('CONTRASEÑA');   
+        if(contraseña){
+            await this.contraseñaTrabajadorLabel.fill(`${contraseña}`); 
+        }
         await this.crearTrabajdorFromularioButton.click();
         await expect(this.tituloTrabajadores).toBeVisible();
     }
@@ -40,6 +49,28 @@ export class TrabajadoresPage {
         await expect(trabajadorDeNombre.first()).toBeVisible();
     }
 
-
+    async getErrorMessages() {
+        const locators = this.page.locator(this.error_msg);
+        try {
+        await locators.first().waitFor({ state: "visible", timeout: 3000 });
+        const count = await locators.count();
+        const messages = [];
+        for (let i = 0; i < count; i++) {
+            const element = locators.nth(i);
+            if (await element.isVisible()) {
+            const text = await element.textContent();
+            if (text) {
+                const trimmedText = text.trim();
+                if (trimmedText !== "Inicio Correcto") {
+                messages.push(trimmedText);
+                }
+            }
+            }
+        }
+        return messages;
+        } catch (e) {
+        return [];
+        }
+    }
 
 }

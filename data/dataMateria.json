@@ -1,0 +1,43 @@
+[
+    { "tipeTest": " Valida",  
+    "nombre": "PASTELERIA", 
+    "mensaje": "Materia creada correctamente ✅", 
+    "pased": true,
+    "errores": 0
+    },
+
+    { "tipeTest": "con caracteres numericos",  
+    "nombre": "CALCULO2", 
+    "mensaje": "Materia no válida. Verifica el formato." ,
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con 2 caracteres",  
+    "nombre": "LI", 
+    "mensaje": "Materia no válida. Verifica el formato." ,
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con doble espacio",  
+    "nombre": "materia  mat", 
+    "mensaje": "Materia no válida. Verifica el formato." ,
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con caracteres especiales",  
+    "nombre": "materia  mat", 
+    "mensaje": "Materia no válida. Verifica el formato." ,
+    "pased": false,
+    "errores": 1
+    },
+
+    { "tipeTest": "con 50 caracteres",  
+    "nombre": "ASDFGHJKLÑQWERTYUIOPZXCBBNMASDFGHJKLÑASDFGHJKLÑÑ", 
+    "mensaje": "Materia no válida. Verifica el formato." ,
+    "pased": false,
+    "errores": 1
+    }
+]

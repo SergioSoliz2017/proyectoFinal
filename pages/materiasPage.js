@@ -29,6 +29,7 @@ export class MateriasPage {
         await expect(this.tituloMaterias).toBeVisible();
     }
     
+    
     async ingresarMateria(nombreMateria) {
         await this.newMateriaButton.click();
         await expect(this.ventanaEmergenteNewMateria).toBeVisible();
@@ -47,7 +48,7 @@ export class MateriasPage {
         await expect(materiaConNombre.first()).toBeVisible();
     }
 
-    async ingresarGrupoMateria(nombreMateria, nombreGrupo) {
+    async ingresarGrupoMateria(nombreMateria, nombreGrupo, precioGrupo, cantidadGrupo, diasGrupo, horaGrupo) {
 
         const filaMateria = this.page.locator('tr', { hasText: nombreMateria });
         await expect(filaMateria.first()).toBeVisible();
@@ -59,16 +60,26 @@ export class MateriasPage {
         await expect(ventanaEmergentMaterias).toBeVisible();
         await this.agregarGrupoButton.click();
 
-        await this.nombreGrupoLabel.fill(`${nombreGrupo}`);
-        await this.precioGrupoLabel.fill("150");
-        await this.cantidadGrupoLabel.fill("17");
-        //await this.diasGrupoLabel.fill('Lunes');
-        const dias = ['Lunes', 'Miercoles', 'Viernes'];
-        await this.diasGrupoLabel.click();
-        for (const dia of dias) {
-            await this.page.locator('li.option', { hasText: dia }).click();
+        //rellenando datos
+        if(nombreGrupo){
+            await this.nombreGrupoLabel.fill(`${nombreGrupo}`);
         }
-        await this.horaGrupoLabel.selectOption("08:00");
+        if(precioGrupo){
+            await this.precioGrupoLabel.fill(`${precioGrupo}`);
+        }
+        if(cantidadGrupo){
+            await this.cantidadGrupoLabel.fill(`${cantidadGrupo}`);
+        }
+        if(diasGrupo){
+            await this.diasGrupoLabel.click();
+            for (const dia of diasGrupo) {
+                await this.page.locator('li.option', { hasText: dia }).click();
+            }
+        }
+        //await this.diasGrupoLabel.fill('Lunes');
+        if(horaGrupo){
+            await this.horaGrupoLabel.selectOption(`${horaGrupo}`);
+        }
         await this.grupoMateriasFormularioButton.click();
         await this.page.waitForTimeout(2000);
     }
