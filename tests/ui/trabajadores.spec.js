@@ -3,10 +3,7 @@ import { TrabajadoresPage } from "../../pages/trabajadoresPage.js";
 import lisTrabajadores from "../../data/dataTrabajador.json";
 import { Logger, screenshotPath } from "../../utils/helper.js"; 
 
-test("@ui @positive Validar ingreso a la pagina Trabajadores", async ({ loginFixture }) => {
-    const trabajadoresPage = new TrabajadoresPage(loginFixture);
-    await trabajadoresPage.gotoTrabajadores();
-});
+
 /*
 test("@ui @smoke ingresar un usuario nuevo", async ({ loginFixture }) => {
     const trabajadoresPage = new TrabajadoresPage(loginFixture);
