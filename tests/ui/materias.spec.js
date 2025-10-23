@@ -8,8 +8,11 @@ import listGrupos from "../../data/dataGrupos.json";
 for (const materia of listMaterias) {
     test(`@ui @negative Crear un materia: "${materia.tipeTest}"`, async ({ loginFixture }) => {
         const materiasPage = new MateriasPage(loginFixture);
+        Logger.info("ingresando al apartado materias");
         await materiasPage.gotoMaterias();
+        Logger.info("registrando la materia");
         await materiasPage.ingresarMateria(materia.nombre);
+        Logger.info("comparando el mensaje obtenido con el esperado");
         await materiasPage.mensajeDeValidación(materia.mensaje)
     });
 }
@@ -17,9 +20,12 @@ for (const materia of listMaterias) {
 for (const grupo of listGrupos) {
     test(`@ui @negative Crear un grupo con: "${grupo.tipeTest}"`, async ({ loginFixture }) => {
         const materiasPage = new MateriasPage(loginFixture);
+        Logger.info("ingresando al apartado materias");
         await materiasPage.gotoMaterias();
+        Logger.info("registrando el grupo en la materia");
         await materiasPage.ingresarGrupoMateria("DIBUJO", grupo.nombre, grupo.precio, grupo.cantidad, grupo.dias, grupo.hora);
         const errorMsg = await materiasPage.getErrorMessages();
+        Logger.info("comparando la cantidad de mensajes obtenidos con los esperados");
         expect(errorMsg.length).toBe(grupo.errores);
     });
 }

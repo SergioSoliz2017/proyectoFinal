@@ -15,12 +15,25 @@ test("@ui @smoke ingresar un usuario nuevo", async ({ loginFixture }) => {
 for (const trabajador of lisTrabajadores) {
   test(`@ui @negative Crear un trabajador con: "${trabajador.tipeTest}"`, async ({ loginFixture }) => {
     const trabajadoresPage = new TrabajadoresPage(loginFixture);
+    Logger.info("ingresando al apartado trabajadores");
     await trabajadoresPage.gotoTrabajadores();
+    Logger.info("creando el trabajador");
+    try{
     await trabajadoresPage.ingresarTrabajador(trabajador.nombre,trabajador.fecha,trabajador.rol,trabajador.contraseña);
+    Logger.info("consultando si dicha inserción fue exitosa");
     if (trabajador.pased){
+        Logger.info("verificando que exista el trabajador ingresado en la lista");
         await trabajadoresPage.verificarTrabajadorPorNombre(trabajador.nombre);
     }
+    Logger.info("obteniendo la lista de errores");
     const errorMsg = await trabajadoresPage.getErrorMessages();
-    expect(errorMsg.length).toBeGreaterThan(trabajador.errores);
+    Logger.info("comparando la lista de errores con la cantidad de errores esperados");
+    expect(errorMsg.length).toBe(trabajador.errores);
+    //expect(errorMsg.length).toBeGreaterThan(trabajador.errores);
+    } catch (err) {
+          await trabajadoresPage.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador`) });
+          throw err;
+          Logger.error(err);
+        }
   });
 }

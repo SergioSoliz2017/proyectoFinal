@@ -7,30 +7,43 @@ import listFiltrosTurores from "../../data/dataFiltroTutor.json";
 
 test("@ui @negative Validar borrado de filtros", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
+    Logger.info("filtrando por genero Mujer");
     await listasPage.buscarFiltroOptions("Mujer");
+    Logger.info("comparando resultados obtenidos con esperados");
     const cantidadFiltros = await listasPage.resultadoFiltro();
     expect(cantidadFiltros).toBe(3);
+    Logger.info("borrando el filtro anterior");
     await listasPage.recargarListas();
+    Logger.info("comparando resultados obtenidos con esperados");
     const cantidadFiltros2 = await listasPage.resultadoFiltro();
     expect(cantidadFiltros2).toBe(5);
 });
 
 test("@ui @negative Cambiar pagina", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
+    Logger.info("cambiando de pagina");
     await listasPage.nextPage();
+    Logger.info("comparando resultados obtenidos con esperados");
     const siguientePagina = await listasPage.resultadoFiltro();
     expect(siguientePagina).toBe(2);
+    Logger.info("retornando a la anterior pagina");
     await listasPage.previusPage();
+    Logger.info("comparando resultados obtenidos con esperados");
     const anteriorPagina = await listasPage.resultadoFiltro();
     expect(anteriorPagina).toBe(5);
 });
 
 test("@ui @negative Validar cantidad a mostrar por pagina", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
+    Logger.info("cambiando la cantidad a mostrar a 20");
     await listasPage.seleccionarRegistrosPorPagina("20");
+    Logger.info("comparando resultados obtenidos con esperados");
     const cantidadFiltros = await listasPage.resultadoFiltro();
     expect(cantidadFiltros).toBe(7);
 });
@@ -38,8 +51,11 @@ test("@ui @negative Validar cantidad a mostrar por pagina", async ({ loginFixtur
 for (const filtro of listFiltrosEstudiantes) {
     test(`@ui @negative Realizar filtro estudiante : "${filtro.tipeTest}"`, async ({ loginFixture }) => {
         const listasPage = new ListasPage(loginFixture);
+        Logger.info("ingresando al apartado listas");
         await listasPage.gotoListas();
+        Logger.info("realizando el filtro");
         await listasPage.buscarFiltroCompleto(filtro.texto, filtro.fechaIni, filtro.fechaFin, filtro.genero, filtro.colegio);
+        Logger.info("comparando resultados obtenidos con esperados");
         const cantidadFiltros = await listasPage.resultadoFiltro();
         expect(cantidadFiltros).toBe(filtro.resultados);
     });
@@ -48,9 +64,13 @@ for (const filtro of listFiltrosEstudiantes) {
 for (const filtroT of listFiltrosTurores) {
     test(`@ui @negative Realizar filtro tutor : "${filtroT.tipeTest}"`, async ({ loginFixture }) => {
         const listasPage = new ListasPage(loginFixture);
+        Logger.info("ingresando al apartado listas");
         await listasPage.gotoListas();
+        Logger.info("ingresando al apartado de listas tutores");
         await listasPage.gotoTutores();
+        Logger.info("realizando el filtro");
         await listasPage.buscarFiltroCompleto(filtroT.texto, filtroT.fechaIni, filtroT.fechaFin, filtroT.genero, filtroT.relacion);
+        Logger.info("comparando resultados obtenidos con esperados");
         const cantidadFiltros = await listasPage.resultadoFiltro();
         expect(cantidadFiltros).toBe(filtroT.resultados);
     });
