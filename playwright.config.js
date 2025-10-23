@@ -9,8 +9,8 @@ dotenv.config({ path: path.resolve(__dirname, ".env") });
  */
 export default defineConfig({
   testDir: "./tests",
-  reporter: "html",
-  //reporter: [["line"], ["allure-playwright"]],
+  //reporter: "html",
+  reporter: [["line"], ["allure-playwright"]],
   timeout: 40000,
   expect: {
     timeout: 5000,
