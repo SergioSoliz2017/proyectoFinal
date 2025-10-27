@@ -5,7 +5,9 @@ import { RegistroEstudiantePage } from "../pages/registroEstudiantePage.js";
 import { Logger } from "./helper.js";
 import { TieneTutorPage } from "../pages/tieneTutorPage.js";
 import { RegistroTutorPage } from "../pages/registroTutorPage.js";
+import { ListasPage } from "../pages/listasPage.js";
 dotenv.config();
+import { faker } from "@faker-js/faker";
 
 export const test = base.extend({
   loginFixture: async ({ page }, use) => {
@@ -22,6 +24,28 @@ export const test = base.extend({
     await use(page);
   },
   datosEstudiantes: async ({ loginFixture }, use) => {
+    const registro = new RegistroEstudiantePage(loginFixture);
+    Logger.info(`Entrando registro datos estudiante`);
+    await registro.gotoRegistro();
+    Logger.info("Llenar datos estudiante");
+    const datosFaker = {
+      nombre: faker.person.firstName(),
+      apellido: faker.person.lastName(),
+      fechaNacimiento: faker.date
+        .birthdate({ min: 1990, max: 2020, mode: "year" })
+        .toISOString()
+        .split("T")[0],
+      genero: faker.helpers.arrayElement(["Hombre", "Mujer"]),
+    };
+    Logger.debug(datosFaker);
+    await registro.llenarDatos(datosFaker);
+    Logger.info("Datos llenado");
+    Logger.info("Ir ¿Tiene tutor?");
+    await registro.gotoTieneTutor();
+    await registro.verificarTieneTutor();
+    await use(loginFixture);
+  },
+  datosEstudiantesNoTutor: async ({ loginFixture }, use) => {
     const registro = new RegistroEstudiantePage(loginFixture);
     Logger.info(`Entrando registro datos estudiante`);
     await registro.gotoRegistro();
@@ -56,22 +80,19 @@ export const test = base.extend({
   cursos: async ({ datosTutores }, use) => {
     const registro = new RegistroTutorPage(datosTutores);
     Logger.info("Llenar datos tutor");
-    Logger.debug({
-      nombre: "Carlos",
-      apellido: "Perez",
-      fechaNacimiento: "2000-01-01",
-      relacion: "Padre",
-      correo: "carlos@gmail.com",
-      genero: "Hombre",
-    });
-    await registro.llenarDatos({
-      nombre: "Carlos",
-      apellido: "Perez",
-      fechaNacimiento: "2000-01-01",
-      relacion: "Padre",
-      correo: "carlos@gmail.com",
-      genero: "Hombre",
-    });
+    const datosFaker = {
+      nombre: faker.person.firstName(),
+      apellido: faker.person.lastName(),
+      fechaNacimiento: faker.date
+        .birthdate({ min: 1990, max: 2020, mode: "year" })
+        .toISOString()
+        .split("T")[0],
+      genero: faker.helpers.arrayElement(["Hombre", "Mujer"]),
+      correo: faker.internet.email(),
+      relacion: faker.helpers.arrayElement(["Padre", "Madre", "Tutor legal"]),
+    };
+    Logger.debug(datosFaker);
+    await registro.llenarDatos(datosFaker);
     Logger.info("Datos llenado");
     Logger.info("Ir registrar cursos");
     await registro.gotoCursos();
@@ -80,8 +101,15 @@ export const test = base.extend({
     await use(datosTutores);
   },
   listas: async ({ loginFixture }, use) => {
-      
-  }
+    const listas = new ListasPage(loginFixture);
+    Logger.info("Ir modulo listas");
+    await listas.gotoListas();
+    Logger.info("Seleccionar asignar curso");
+    await listas.asignarCurso();
+    Logger.info("Seleccionar tutor");
+    await listas.asignarTutor();
+    await use(loginFixture);
+  },
 });
 
 export const expect = base.expect;

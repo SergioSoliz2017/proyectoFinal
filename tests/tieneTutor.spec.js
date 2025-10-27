@@ -11,9 +11,9 @@ test(`Test si tiene tutor`, async ({ datosEstudiantes }) => {
   await tieneTutor.verificarSiTieneTutor();
 });
 
-test(`Test no tiene tutor`, async ({ datosEstudiantes }) => {
+test(`Test no tiene tutor`, async ({ datosEstudiantesNoTutor }) => {
   Logger.info(`Test no tiene tutor`);
-  const tieneTutor = new TieneTutorPage(datosEstudiantes);
+  const tieneTutor = new TieneTutorPage(datosEstudiantesNoTutor);
   Logger.info(`Seleccionar opcion No`);
   await tieneTutor.noTieneTutor();
   Logger.info(`Verificar campos tutor autocompletados`);

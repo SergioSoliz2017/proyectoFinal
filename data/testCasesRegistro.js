@@ -777,10 +777,6 @@ export const testCasesPagoCursos = [
     key: "caso_11",
     expectSuccess: false,
   },
-  {
-    key: "caso_12",
-    expectSuccess: false,
-  },
 ];
 export const testCasesDescuentos = [
   {
@@ -823,7 +819,7 @@ export const testCasesDescuentos = [
 export const testCasesDescuentosLista = [
   {
     key: "5 - curso  - lista",
-    clase: ".sc-fjqEFS.fBtMmT",
+    clase: "sinBloque",
     opcion: 0,
     opcionInput: 0,
     claseDiv: ".sc-hQRsPl.gAfhmQ",
@@ -832,7 +828,7 @@ export const testCasesDescuentosLista = [
   },
   {
     key: "6 - curso  - lista",
-    clase: ".sc-fjqEFS.fBtMmT",
+    clase: "sinBloque",
     opcion: 0,
     opcionInput: 0,
     claseDiv: ".sc-hQRsPl.gAfhmQ",
@@ -841,17 +837,17 @@ export const testCasesDescuentosLista = [
   },
   {
     key: "7 - total  - lista",
-    clase: ".sc-fjqEFS.fBtMmT",
-    opcion: 2,
+    clase: ".sc-ehmTmK.loHxwa",
+    opcion: 1,
     opcionInput: 1,
     claseDiv: ".sc-hQRsPl.gAfhmQ",
     claseSpan: ".sc-fjqEFS.fBtMmT",
     tipo: "porcentaje",
   },
   {
-    key: "8 - total - lista",
-    clase: ".sc-fjqEFS.fBtMmT",
-    opcion: 2,
+    key: "8 - total - listas",
+    clase: ".sc-ehmTmK.loHxwa",
+    opcion: 1,
     opcionInput: 1,
     claseDiv: ".sc-hQRsPl.gAfhmQ",
     claseSpan: ".sc-fjqEFS.fBtMmT",

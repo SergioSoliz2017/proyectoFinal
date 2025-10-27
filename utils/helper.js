@@ -31,10 +31,13 @@ export const Logger = winston.createLogger({
   level: "debug",
   format: winston.format.combine(
     winston.format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
-    winston.format.printf(
-      ({ timestamp, level, message }) =>
-        `${timestamp} ${level.toUpperCase()} ${message}`
-    )
+    winston.format.printf(({ timestamp, level, message }) => {
+      const msg =
+        typeof message === "object"
+          ? JSON.stringify(message, null, 2)
+          : message;
+      return `${timestamp} ${level.toUpperCase()} ${msg}`;
+    })
   ),
   transports: [
     new winston.transports.File({

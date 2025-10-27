@@ -3,7 +3,6 @@ import { RegistroTutorPage } from "../pages/registroTutorPage.js";
 import { Logger, screenshotPath } from "../utils/helper.js";
 import {
   testCasesTutoresObligatorios,
-  testCasesEstudiantesOpcionales,
   testCasesTutoresOpcionales,
 } from "../data/testCasesRegistro.js";
 const tutores = require("../data/tutoresObligatorio.json");

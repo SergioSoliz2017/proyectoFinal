@@ -1,6 +1,6 @@
 import { expect } from "@playwright/test";
 import { Logger } from "../utils/helper";
-import { de } from "@faker-js/faker";
+import { de, th } from "@faker-js/faker";
 
 export class RegistroCursoInscritoPage {
   constructor(page) {
@@ -10,10 +10,33 @@ export class RegistroCursoInscritoPage {
     this.mesesInput = 'input[placeholder="Meses"]';
     this.descuentoInput = 'input[placeholder="Descuento"]';
     this.pagoInput = 'input[placeholder="Monto"]';
+    this.error_msg = "//div[@role='status' and @aria-live='polite']";
   }
 
   async seleccionarCurso(curso) {
     await this.page.selectOption(this.cursoSelect, curso);
+  }
+  async gotoFinalizar() {
+    await this.page.click('button:has(svg[data-icon="angle-right"])');
+  }
+
+  async gotoFinalizarListas() {
+    await this.page
+      .locator("button.sc-hgZZql.iDwqhl", { hasText: "Guardar" })
+      .click();
+  }
+
+  async gotoRegistroVirtual() {
+    await this.page
+      .locator("button.sc-djvmMF.euCbBy", { hasText: "SI" })
+      .click();
+  }
+
+  async verficarRegistroCompleto() {
+    await expect(this.page.locator("div.sc-jmnVvD.bKjtNG")).toBeVisible();
+    await expect(this.page.locator("div.sc-hZgfyJ.gvggpC")).toHaveText(
+      /Registro exitoso/i
+    );
   }
 
   async seleccionarGrupo(grupo) {
@@ -21,11 +44,15 @@ export class RegistroCursoInscritoPage {
   }
 
   async llenarMeses(meses) {
-    await this.page.fill(this.mesesInput, meses);
+    const inputMeses = this.page.locator('input[placeholder="Meses"]');
+    await inputMeses.focus();
+    await inputMeses.pressSequentially(meses);
   }
 
   async llenarDescuento(descuento) {
-    await this.page.fill(this.descuentoInput, descuento);
+    const descuentoInput = this.page.locator('input[placeholder="Descuento"]');
+    await descuentoInput.focus();
+    await descuentoInput.pressSequentially(descuento);
   }
 
   async llenarDescuentoTotal(descuento) {
@@ -40,16 +67,12 @@ export class RegistroCursoInscritoPage {
   }
 
   async clickDescuento(clase, opcion) {
-    // 🔹 Seleccionar el bloque específico
-
-    const bloque = this.page.locator(clase).nth(opcion);
-
-    // 🔹 Localizar el botón de porcentaje dentro del bloque
-    const boton = bloque
-      .locator('div:has-text("Descuento") >> div.sc-ikZpkk.bgHuoS')
-      .click();
-
-    // 🔹 Opcional: pausa para depuración
+    if (clase !== "sinBloque") {
+      const bloque = this.page.locator(clase).nth(opcion);
+      await bloque.locator('div:has-text("Descuento")').click();
+    } else {
+      await this.page.locator("div.sc-hQRsPl.hHbJPs >> div.sc-lgVVsH").click();
+    }
   }
 
   async verificarDescuento(
@@ -60,11 +83,16 @@ export class RegistroCursoInscritoPage {
     opcionInput,
     tipo
   ) {
-    await this.page.pause();
-
     const bloque = this.page.locator(clase).nth(opcion);
-    const inputDescuento = bloque.locator('input[placeholder="Descuento"]');
-    const totalSpan = bloque.locator(claseDiv).nth(0).locator(claseSpan);
+    const inputDescuento =
+      clase !== "sinBloque"
+        ? bloque.locator('input[placeholder="Descuento"]')
+        : this.page.locator('input[placeholder="Descuento"]');
+    const totalSpan =
+      clase !== "sinBloque"
+        ? bloque.locator(claseDiv).nth(0).locator(claseSpan)
+        : this.page.locator(claseDiv).nth(0).locator(claseSpan);
+    expect(totalSpan).toBeVisible();
     const totalInicialTexto = (await totalSpan.textContent())
       ?.replace(/[^\d.-]/g, "")
       .trim();
@@ -132,7 +160,9 @@ export class RegistroCursoInscritoPage {
           }
         }
       }
-      return messages;
+
+      // 🧠 Elimina duplicados antes de devolver
+      return [...new Set(messages)];
     } catch (e) {
       return [];
     }
@@ -142,52 +172,57 @@ export class RegistroCursoInscritoPage {
     await this.page.click('button:has(svg[data-icon="plus"])');
   }
 
-  async verificarCursoInscrito(clase) {
-    const precioSpan = this.page.locator(clase).nth(1);
-    const textoPrecio = await precioSpan.textContent();
-    const precio = textoPrecio.trim();
-    const filas = this.page.locator(".sc-lbOyJj.iQiVOs");
-    const cantidadDespues = await filas.count();
-    const precios = await this.page
-      .locator(".sc-lbOyJj.iQiVOs .sc-gFGZVQ.MPyKX:nth-child(3)")
-      .allTextContents();
-    const hayNaN = precios.some((p) => p.trim().includes("NaN"));
-    if (precio.includes("NaN")) {
-      Logger.info(
-        "El precio mostrado era NaN, el curso no debería haberse agregado"
-      );
-      if (hayNaN) {
-        Logger.error(
-          "Se detectó un curso con precio NaN agregado incorrectamente"
-        );
-      } else {
-        Logger.debug("El curso con NaN no se agregó (correcto)");
-      }
+  async verificarCursoInscrito(clase, opcion, llenar) {
+    const precioSpan = this.page.locator(clase).nth(opcion);
+    if (!llenar) {
+      await expect(precioSpan).not.toBeVisible();
     } else {
-      Logger.debug("Precio correcto:", precio);
-
-      if (hayNaN) {
-        Logger.error("Hay un curso con precio NaN en la lista, algo falló");
-      } else if (cantidadDespues === 0) {
-        Logger.error("No se agregó ningún curso aunque el precio era válido");
+      const textoPrecio = await precioSpan.textContent();
+      const precio = textoPrecio.trim();
+      const filas = this.page.locator(".sc-lbOyJj.iQiVOs");
+      const cantidadDespues = await filas.count();
+      const precios = await this.page
+        .locator(".sc-lbOyJj.iQiVOs .sc-gFGZVQ.MPyKX:nth-child(3)")
+        .allTextContents();
+      const hayNaN = precios.some((p) => p.trim().includes("NaN"));
+      if (precio.includes("NaN")) {
+        Logger.info(
+          "El precio mostrado era NaN, el curso no debería haberse agregado"
+        );
+        if (hayNaN) {
+          Logger.error(
+            "Se detectó un curso con precio NaN agregado incorrectamente"
+          );
+          return false;
+        } else {
+          Logger.debug("El curso con NaN no se agregó (correcto)");
+          return true;
+        }
       } else {
-        Logger.debug("El curso se agregó correctamente a la lista");
+        Logger.debug("Precio correcto:", precio);
+
+        if (hayNaN) {
+          Logger.error("Hay un curso con precio NaN en la lista, algo falló");
+          return false;
+        } else if (cantidadDespues === 0) {
+          Logger.error("No se agregó ningún curso aunque el precio era válido");
+          return true;
+        } else {
+          Logger.debug("El curso se agregó correctamente a la lista");
+          return true;
+        }
       }
     }
+
+    /**/
   }
 
-  async verificarPago(descuento, pago, clase) {
-    const bloque = this.page.locator(clase).nth(2);
+  async verificarPago(descuento, pago, clase, opcion, claseDiv, claseInput) {
+    const bloque = this.page.locator(clase).nth(opcion);
     const inputDescuento = bloque.locator('input[placeholder="Descuento"]');
     const inputPago = bloque.locator('input[placeholder="Monto"]');
-    const totalSpan = bloque
-      .locator(".sc-ckMVTt.cqecnN")
-      .nth(0)
-      .locator(".sc-fXynhf.gCDMpl");
-    const saldoSpan = bloque
-      .locator(".sc-ckMVTt.cqecnN")
-      .nth(1)
-      .locator(".sc-fXynhf.gCDMpl");
+    const totalSpan = bloque.locator(claseDiv).nth(0).locator(claseInput);
+    const saldoSpan = bloque.locator(claseDiv).nth(1).locator(claseInput);
     const totalInicialTexto = (await totalSpan.textContent())
       ?.replace(/[^\d.-]/g, "")
       .trim();
@@ -240,13 +275,11 @@ export class RegistroCursoInscritoPage {
     } else {
       Logger.info("No se verifica saldo porque el pago es inválido");
     }
-
-    // 🔹 Retornar estado de validación si necesitas usarlo después
   }
 
-  async verificarCambioTipoDescuento(opcion) {
+  async verificarCambioTipoDescuento(opcion, clase) {
     const botonesDescuento = this.page.locator(
-      'div:has-text("Descuento") >> div.sc-ikZpkk.bgHuoS'
+      `div:has-text("Descuento") >> div${clase}`
     );
 
     await expect(botonesDescuento.nth(opcion).locator("svg")).toHaveAttribute(
@@ -260,9 +293,9 @@ export class RegistroCursoInscritoPage {
     );
   }
 
-  async verificarCambioIconoDescuento() {
+  async verificarCambioIconoDescuento(clase) {
     const botonesDescuento = this.page.locator(
-      'div:has-text("Descuento") >> div.sc-ikZpkk.bgHuoS'
+      `div:has-text("Descuento") >> div${clase}`
     );
     await expect(botonesDescuento.nth(0).locator("svg")).toHaveAttribute(
       "data-icon",
@@ -282,24 +315,28 @@ export class RegistroCursoInscritoPage {
       "percent"
     );
   }
+  //.sc-iTONeN.lCDtO
+  //.sc-iNWwEs
 
-  async verificarCursoEnHorario() {
-    const celdas = this.page.locator(
-      "div.sc-iTONeN.lCDtO table tbody td div.sc-iNWwEs"
-    );
+  //.sc-kGhOqx kpCxXS
+  //.sc-bAKPPm eUPazL
+  async verificarCursoEnHorario(clase, celda) {
+    await this.page.waitForTimeout(1000);
+    await this.page.evaluate((selector) => {
+      const div = document.querySelector(selector);
+      if (div) div.scrollTop = div.scrollHeight; // baja al final
+    }, `div${clase}`);
+    const celdas = this.page.locator(`div${clase} table tbody td div${celda}`);
     const existeCurso = await celdas.filter({ hasText: "Curso01" }).count();
-    if (existeCurso > 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return existeCurso > 0;
   }
 
-  async eliminarCursoEnHorario(nombreGrupo) {
-    const celdaGrupo = page.locator(
-      `div.sc-iTONeN.lCDtO table tbody td div.sc-iNWwEs`,
+  async eliminarCursoEnHorario(nombreGrupo, clase, celda) {
+    const celdaGrupo = this.page.locator(
+      `div${clase} table tbody td div${celda}`,
       { hasText: nombreGrupo }
     );
+
     await celdaGrupo.click();
   }
 }

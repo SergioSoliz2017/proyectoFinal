@@ -4,42 +4,48 @@
     "curso": "APOYO",
     "grupo": "Seleccionar Grupo",
     "meses": "6.5",
-    "descuento": "150"
+    "descuento": "150",
+    "errores": 3
   },
   "caso_2": {
     "descripcion": "curso seleccionado - grupo seleccionado - meses > 12 - descuento monetario > precio",
     "curso": "APOYO",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "18",
-    "descuento": "1500"
+    "descuento": "1500",
+    "errores": 2
   },
   "caso_3": {
     "descripcion": "curso seleccionado - grupo no seleccionado - meses < 1 - descuento con simbolo - +",
     "curso": "APOYO",
     "grupo": "Seleccionar Grupo",
     "meses": "0.5",
-    "descuento": "+20"
+    "descuento": "+20",
+    "errores": 3
   },
   "caso_4": {
     "descripcion": "curso seleccionado - grupo seleccionado - meses con simbolo - + - descuento valido",
     "curso": "APOYO",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "6+",
-    "descuento": "20"
+    "descuento": "20",
+    "errores": 1
   },
   "caso_5": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses > 12 - descuento con simbolo - +",
     "curso": "Seleccionar Curso",
     "grupo": "Seleccionar Grupo",
     "meses": "15",
-    "descuento": "-10"
+    "descuento": "-10",
+    "errores": 4
   },
   "caso_6": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses < 1 - descuento valido",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "0.8",
-    "descuento": "5"
+    "descuento": "5",
+    "errores": 2
   },
   "caso_7": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses con simbolo - + - descuento porcentaje > 100%",
@@ -47,103 +53,119 @@
     "grupo": "Seleccionar Grupo",
     "meses": "4+",
     "descuento": "120"
+    ,
+    "errores": 4
   },
   "caso_8": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses valido - descuento valido",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "8",
-    "descuento": "15"
+    "descuento": "15",
+    "errores": 1
   },
   "caso_9": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses valido - descuento porcentaje > 100%",
     "curso": "Seleccionar Curso",
     "grupo": "Seleccionar Grupo",
     "meses": "10",
-    "descuento": "130"
+    "descuento": "130",
+    "errores": 3
   },
   "caso_10": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses decimales - descuento monetario > precio",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "6.3",
-    "descuento": "1200"
+    "descuento": "1200",
+    "errores": 3
   },
   "caso_11": {
     "descripcion": "curso seleccionado - grupo no seleccionado - meses decimales - descuento con simbolo - +",
     "curso": "APOYO",
     "grupo": "Seleccionar Grupo",
     "meses": "3.5",
-    "descuento": "+50"
+    "descuento": "+50",
+    "errores": 3
   },
   "caso_12": {
     "descripcion": "curso seleccionado - grupo seleccionado - meses > 12 - descuento valido",
     "curso": "APOYO",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "14",
-    "descuento": "10"
+    "descuento": "10",
+    "errores": 1
   },
   "caso_13": {
     "descripcion": "curso seleccionado - grupo no seleccionado - meses < 1 - descuento porcentaje > 100%",
     "curso": "APOYO",
     "grupo": "Seleccionar Grupo",
     "meses": "0.7",
-    "descuento": "110"
+    "descuento": "110",
+    "errores": 3
   },
   "caso_14": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses valido - descuento con simbolo - +",
     "curso": "Seleccionar Curso",
     "grupo": "Seleccionar Grupo",
     "meses": "6",
-    "descuento": "50+"
+    "descuento": "50+",
+    "errores": 3
   },
   "caso_15": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses decimales - descuento valido",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "9.8",
-    "descuento": "8"
+    "descuento": "8",
+    "errores": 2
   },
   "caso_16": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses > 12 - descuento porcentaje > 100%",
     "curso": "Seleccionar Curso",
     "grupo": "Seleccionar Grupo",
     "meses": "20",
-    "descuento": "140"
+    "descuento": "140",
+    "errores": 4
   },
   "caso_17": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses valido - descuento monetario > precio",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01",
+    "grupo": "Curso01 ✅",
     "meses": "10",
-    "descuento": "2000"
+    "descuento": "2000",
+    "errores": 2
   },
   "caso_18": {
     "descripcion": "curso seleccionado - grupo seleccionado - meses con simbolo - + - descuento monetario > precio",
     "curso": "APOYO",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "8-",
-    "descuento": "1500+"
+    "descuento": "1500+",
+    "errores": 2
   },
   "caso_19": {
     "descripcion": "curso seleccionado - grupo no seleccionado - meses valido - descuento con simbolo - +",
     "curso": "APOYO",
     "grupo": "Seleccionar Grupo",
     "meses": "5",
-    "descuento": "+15"
+    "descuento": "+15",
+    "errores": 2
   },
   "caso_20": {
     "descripcion": "curso no seleccionado - grupo no seleccionado - meses con simbolo - + - descuento con simbolo - +",
     "curso": "Seleccionar Curso",
     "grupo": "Seleccionar Grupo",
     "meses": "-12",
-    "descuento": "+30"
+    "descuento": "+30",
+    "errores": 4
   },
   "caso_21": {
     "descripcion": "curso no seleccionado - grupo seleccionado - meses < 1 - descuento monetario > precio",
     "curso": "Seleccionar Curso",
-    "grupo": "Curso01  ✅",
+    "grupo": "Curso01 ✅",
     "meses": "0.9",
-    "descuento": "2500"
+    "descuento": "2500",
+    "errores": 3
   }
 }
