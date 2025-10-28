@@ -17,7 +17,7 @@ for (const trabajador of lisTrabajadores) {
     const trabajadoresPage = new TrabajadoresPage(loginFixture);
     Logger.info("ingresando al apartado trabajadores");
     await trabajadoresPage.gotoTrabajadores();
-    Logger.info("creando el trabajador");
+    Logger.info(`Intentando crear trabajador: ${trabajador.nombre} con rol ${trabajador.rol}`);
     try{
     await trabajadoresPage.ingresarTrabajador(trabajador.nombre,trabajador.fecha,trabajador.rol,trabajador.contraseña);
     Logger.info("consultando si dicha inserción fue exitosa");
@@ -31,9 +31,9 @@ for (const trabajador of lisTrabajadores) {
     expect(errorMsg.length).toBe(trabajador.errores);
     //expect(errorMsg.length).toBeGreaterThan(trabajador.errores);
     } catch (err) {
-          await trabajadoresPage.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador`) });
-          throw err;
+          await loginFixture.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador con ${trabajador.tipeTest}`) });
           Logger.error(err);
+          throw err;
         }
   });
 }

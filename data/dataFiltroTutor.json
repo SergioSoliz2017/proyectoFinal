@@ -44,21 +44,21 @@
     "resultados": 1 
     },
 
-    { "tipeTest": "con filtro, sin filtro, Hombre y Tia",  
+    { "tipeTest": "con filtro, sin filtro, Hombre y Tio",  
     "texto": "Raul", 
     "fechaIni": "",  
     "fechaFin": "",  
     "genero": "Hombre", 
-    "relacion": "Tia", 
+    "relacion": "Tio", 
     "resultados": 1 
     },
 
-    { "tipeTest": "con filtro, con fechas, Mujer y Abuelo",  
+    { "tipeTest": "con filtro, con fechas, Mujer y Abuela",  
     "texto": "Dania", 
     "fechaIni": "1980-03-02",  
     "fechaFin": "1980-03-09",  
     "genero": "Mujer", 
-    "relacion": "Abuelo", 
+    "relacion": "Abuela", 
     "resultados": 1 
     },
 
@@ -125,11 +125,11 @@
     "resultados": 1 
     },
 
-    { "tipeTest": "con filtro, sin filtro, Hombre y Abuela",  
+    { "tipeTest": "con filtro, sin filtro, Mujer y Abuela",  
     "texto": "Dania", 
     "fechaIni": "",  
     "fechaFin": "",  
-    "genero": "Hombre", 
+    "genero": "Mujer", 
     "relacion": "Abuela", 
     "resultados": 1 
     },
@@ -188,11 +188,11 @@
     "resultados": 1 
     },
 
-    { "tipeTest": "sin filtro, sin filtro, Hombre y Madre",  
+    { "tipeTest": "sin filtro, sin filtro, Mujer y Madre",  
     "texto": "", 
     "fechaIni": "",  
     "fechaFin": "",  
-    "genero": "Hombre", 
+    "genero": "Mujer", 
     "relacion": "Madre", 
     "resultados": 1 
     },
@@ -233,12 +233,12 @@
     "resultados": 1 
     },
 
-    { "tipeTest": "con filtro, con fechas, Mujer y Padre",  
+    { "tipeTest": "con filtro, con fechas, Mujer y Madre",  
     "texto": "Clara", 
     "fechaIni": "1980-03-03",  
     "fechaFin": "1980-03-15",  
     "genero": "Mujer", 
-    "relacion": "Padre", 
+    "relacion": "Madre", 
     "resultados": 1 
     },
 
@@ -251,21 +251,21 @@
     "resultados": 1 
     },
 
-    { "tipeTest": "sin filtro, con fechas, Mujer y Tio",  
+    { "tipeTest": "sin filtro, con fechas, Mujer y Tia",  
     "texto": "", 
     "fechaIni": "1980-03-09",  
     "fechaFin": "1980-03-15",  
     "genero": "Mujer", 
-    "relacion": "Tio", 
+    "relacion": "Tia", 
     "resultados": 1 
     },
 
-    { "tipeTest": "sin filtro, con fechas, Mujer y Abuelo",  
+    { "tipeTest": "sin filtro, con fechas, Mujer y Abuela",  
     "texto": "", 
     "fechaIni": "1980-03-02",  
     "fechaFin": "1980-03-11",  
     "genero": "Mujer", 
-    "relacion": "Abuelo", 
+    "relacion": "Abuela", 
     "resultados": 1 
     }
 ]

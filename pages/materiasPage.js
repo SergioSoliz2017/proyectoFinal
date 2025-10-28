@@ -65,7 +65,8 @@ export class MateriasPage {
             await this.nombreGrupoLabel.fill(`${nombreGrupo}`);
         }
         if(precioGrupo){
-            await this.precioGrupoLabel.fill(`${precioGrupo}`);
+            //await this.precioGrupoLabel.fill(`${precioGrupo}`);
+            await this.precioGrupoLabel.pressSequentially(`${precioGrupo}`); 
         }
         if(cantidadGrupo){
             await this.cantidadGrupoLabel.fill(`${cantidadGrupo}`);

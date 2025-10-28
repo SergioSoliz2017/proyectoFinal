@@ -1,0 +1,777 @@
+2025-10-23 01:33:17 INFO ingresando al apartado trabajadores
+2025-10-23 01:33:19 INFO creando el trabajador
+2025-10-23 01:33:20 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:33:20 INFO obteniendo la lista de errores
+2025-10-23 01:33:23 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:33:31 INFO ingresando al apartado trabajadores
+2025-10-23 01:33:33 INFO creando el trabajador
+2025-10-23 01:33:34 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:33:34 INFO verificando que exista el trabajador ingresado en la lista
+2025-10-23 01:33:35 INFO obteniendo la lista de errores
+2025-10-23 01:33:38 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:33:42 INFO ingresando al apartado trabajadores
+2025-10-23 01:33:44 INFO creando el trabajador
+2025-10-23 01:33:45 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:33:45 INFO obteniendo la lista de errores
+2025-10-23 01:33:48 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:33:56 INFO ingresando al apartado trabajadores
+2025-10-23 01:33:58 INFO creando el trabajador
+2025-10-23 01:33:59 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:33:59 INFO obteniendo la lista de errores
+2025-10-23 01:34:02 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:34:10 INFO ingresando al apartado trabajadores
+2025-10-23 01:34:12 INFO creando el trabajador
+2025-10-23 01:34:13 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:34:13 INFO obteniendo la lista de errores
+2025-10-23 01:34:16 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:34:24 INFO ingresando al apartado trabajadores
+2025-10-23 01:34:26 INFO creando el trabajador
+2025-10-23 01:34:28 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:34:28 INFO obteniendo la lista de errores
+2025-10-23 01:34:31 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:34:39 INFO ingresando al apartado trabajadores
+2025-10-23 01:34:41 INFO creando el trabajador
+2025-10-23 01:34:42 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:34:42 INFO obteniendo la lista de errores
+2025-10-23 01:34:45 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:34:52 INFO ingresando al apartado trabajadores
+2025-10-23 01:34:54 INFO creando el trabajador
+2025-10-23 01:34:56 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:34:56 INFO obteniendo la lista de errores
+2025-10-23 01:34:59 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:35:07 INFO ingresando al apartado trabajadores
+2025-10-23 01:35:09 INFO creando el trabajador
+2025-10-23 01:35:10 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:35:10 INFO obteniendo la lista de errores
+2025-10-23 01:35:13 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:35:22 INFO ingresando al apartado trabajadores
+2025-10-23 01:35:23 INFO creando el trabajador
+2025-10-23 01:35:25 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:35:25 INFO obteniendo la lista de errores
+2025-10-23 01:35:28 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:35:36 INFO ingresando al apartado trabajadores
+2025-10-23 01:35:37 INFO creando el trabajador
+2025-10-23 01:35:38 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:35:38 INFO obteniendo la lista de errores
+2025-10-23 01:35:41 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:35:49 INFO ingresando al apartado trabajadores
+2025-10-23 01:35:51 INFO creando el trabajador
+2025-10-23 01:35:52 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:35:52 INFO obteniendo la lista de errores
+2025-10-23 01:35:55 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:36:04 INFO ingresando al apartado trabajadores
+2025-10-23 01:36:06 INFO creando el trabajador
+2025-10-23 01:36:06 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:36:06 INFO obteniendo la lista de errores
+2025-10-23 01:36:09 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:36:17 INFO ingresando al apartado trabajadores
+2025-10-23 01:36:19 INFO creando el trabajador
+2025-10-23 01:36:20 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:36:20 INFO obteniendo la lista de errores
+2025-10-23 01:36:23 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:36:31 INFO ingresando al apartado trabajadores
+2025-10-23 01:36:33 INFO creando el trabajador
+2025-10-23 01:36:34 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:36:34 INFO obteniendo la lista de errores
+2025-10-23 01:36:37 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:36:45 INFO ingresando al apartado trabajadores
+2025-10-23 01:36:47 INFO creando el trabajador
+2025-10-23 01:36:48 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:36:48 INFO obteniendo la lista de errores
+2025-10-23 01:36:51 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:37:47 INFO ingresando al apartado trabajadores
+2025-10-23 01:37:48 INFO creando el trabajador
+2025-10-23 01:37:50 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:37:50 INFO obteniendo la lista de errores
+2025-10-23 01:37:53 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:38:01 INFO ingresando al apartado trabajadores
+2025-10-23 01:38:03 INFO creando el trabajador
+2025-10-23 01:38:04 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:38:04 INFO verificando que exista el trabajador ingresado en la lista
+2025-10-23 01:38:04 INFO obteniendo la lista de errores
+2025-10-23 01:38:07 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:38:11 INFO ingresando al apartado trabajadores
+2025-10-23 01:38:13 INFO creando el trabajador
+2025-10-23 01:38:14 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:38:14 INFO obteniendo la lista de errores
+2025-10-23 01:38:17 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:38:25 INFO ingresando al apartado trabajadores
+2025-10-23 01:38:27 INFO creando el trabajador
+2025-10-23 01:38:28 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:38:28 INFO obteniendo la lista de errores
+2025-10-23 01:38:31 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:38:40 INFO ingresando al apartado trabajadores
+2025-10-23 01:38:42 INFO creando el trabajador
+2025-10-23 01:38:43 INFO consultando si dicha inserción fue exitosa
+2025-10-23 01:38:43 INFO obteniendo la lista de errores
+2025-10-23 01:38:46 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-23 01:38:54 INFO ingresando al apartado trabajadores
+2025-10-28 16:45:55 INFO ingresando al apartado trabajadores
+2025-10-28 16:45:57 INFO Intentando crear trabajador:  con rol 
+2025-10-28 16:45:58 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:45:58 INFO obteniendo la lista de errores
+2025-10-28 16:46:01 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:46:01 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m4[39m
+Received: [31m0[39m
+2025-10-28 16:46:10 INFO ingresando al apartado trabajadores
+2025-10-28 16:46:12 INFO Intentando crear trabajador: Miguel Teran con rol Maestro
+2025-10-28 16:46:13 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:46:13 INFO verificando que exista el trabajador ingresado en la lista
+2025-10-28 16:46:14 INFO obteniendo la lista de errores
+2025-10-28 16:46:17 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:46:21 INFO ingresando al apartado trabajadores
+2025-10-28 16:46:23 INFO Intentando crear trabajador:  con rol Secretaria
+2025-10-28 16:46:24 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:46:24 INFO obteniendo la lista de errores
+2025-10-28 16:46:27 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:46:27 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m1[39m
+Received: [31m0[39m
+2025-10-28 16:46:35 INFO ingresando al apartado trabajadores
+2025-10-28 16:46:37 INFO Intentando crear trabajador:  con rol Maestro
+2025-10-28 16:46:38 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:46:38 INFO obteniendo la lista de errores
+2025-10-28 16:46:41 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:46:42 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:46:50 INFO ingresando al apartado trabajadores
+2025-10-28 16:46:52 INFO Intentando crear trabajador:  con rol 
+2025-10-28 16:46:53 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:46:53 INFO obteniendo la lista de errores
+2025-10-28 16:46:56 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:47:05 INFO ingresando al apartado trabajadores
+2025-10-28 16:47:07 INFO Intentando crear trabajador:  con rol Secretaria
+2025-10-28 16:47:08 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:47:08 INFO obteniendo la lista de errores
+2025-10-28 16:47:11 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:47:11 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:47:19 INFO ingresando al apartado trabajadores
+2025-10-28 16:47:21 INFO Intentando crear trabajador: Raul Quiroga con rol Maestro
+2025-10-28 16:47:22 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:47:22 INFO obteniendo la lista de errores
+2025-10-28 16:47:25 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:47:34 INFO ingresando al apartado trabajadores
+2025-10-28 16:47:35 INFO Intentando crear trabajador: Maria Quiroga con rol 
+2025-10-28 16:47:37 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:47:37 INFO obteniendo la lista de errores
+2025-10-28 16:47:40 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:47:40 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 16:47:48 INFO ingresando al apartado trabajadores
+2025-10-28 16:47:50 INFO Intentando crear trabajador: Maria Quiroga con rol 
+2025-10-28 16:47:51 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:47:51 INFO obteniendo la lista de errores
+2025-10-28 16:47:54 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:47:54 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m1[39m
+Received: [31m0[39m
+2025-10-28 16:48:02 INFO ingresando al apartado trabajadores
+2025-10-28 16:48:04 INFO Intentando crear trabajador: Selena Gomez con rol Maestro
+2025-10-28 16:48:05 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:48:05 INFO obteniendo la lista de errores
+2025-10-28 16:48:08 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:48:17 INFO ingresando al apartado trabajadores
+2025-10-28 16:48:18 INFO Intentando crear trabajador: JoseMaria Nieves Robertina Quiroga Tercerrina con rol Maestro
+2025-10-28 16:48:20 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:48:20 INFO obteniendo la lista de errores
+2025-10-28 16:48:23 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:48:23 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m1[39m
+Received: [31m0[39m
+2025-10-28 16:48:31 INFO ingresando al apartado trabajadores
+2025-10-28 16:48:33 INFO Intentando crear trabajador: JoseMaria Nieves Robertina Quiroga Tercerrina con rol Maestro
+2025-10-28 16:48:34 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:48:34 INFO obteniendo la lista de errores
+2025-10-28 16:48:38 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:48:38 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:48:46 INFO ingresando al apartado trabajadores
+2025-10-28 16:48:48 INFO Intentando crear trabajador: JoseMaria Nieves Robertina Quiroga Tercerrina con rol Maestro
+2025-10-28 16:48:49 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:48:49 INFO obteniendo la lista de errores
+2025-10-28 16:48:52 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:48:52 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:49:00 INFO ingresando al apartado trabajadores
+2025-10-28 16:49:02 INFO Intentando crear trabajador: UN con rol Maestro
+2025-10-28 16:49:03 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:49:03 INFO obteniendo la lista de errores
+2025-10-28 16:49:06 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:49:14 INFO ingresando al apartado trabajadores
+2025-10-28 16:49:16 INFO Intentando crear trabajador: UN con rol 
+2025-10-28 16:49:18 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:49:18 INFO obteniendo la lista de errores
+2025-10-28 16:49:21 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:49:29 INFO ingresando al apartado trabajadores
+2025-10-28 16:49:31 INFO Intentando crear trabajador: NA con rol Secretaria
+2025-10-28 16:49:32 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:49:32 INFO obteniendo la lista de errores
+2025-10-28 16:49:35 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:49:43 INFO ingresando al apartado trabajadores
+2025-10-28 16:49:45 INFO Intentando crear trabajador: NA con rol Secretaria
+2025-10-28 16:49:46 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:49:46 INFO obteniendo la lista de errores
+2025-10-28 16:49:49 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:49:58 INFO ingresando al apartado trabajadores
+2025-10-28 16:50:00 INFO Intentando crear trabajador: 1N3SS con rol Secretaria
+2025-10-28 16:50:01 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:50:01 INFO obteniendo la lista de errores
+2025-10-28 16:50:04 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:50:04 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m1[39m
+Received: [31m0[39m
+2025-10-28 16:50:12 INFO ingresando al apartado trabajadores
+2025-10-28 16:50:14 INFO Intentando crear trabajador: 1N3SS con rol 
+2025-10-28 16:50:15 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:50:15 INFO obteniendo la lista de errores
+2025-10-28 16:50:18 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:50:19 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 16:50:27 INFO ingresando al apartado trabajadores
+2025-10-28 16:50:29 INFO Intentando crear trabajador: 1N3SS con rol Secretaria
+2025-10-28 16:50:30 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:50:30 INFO obteniendo la lista de errores
+2025-10-28 16:50:33 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:50:33 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 16:50:41 INFO ingresando al apartado trabajadores
+2025-10-28 16:50:43 INFO Intentando crear trabajador: 1N3SS con rol 
+2025-10-28 16:50:44 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:50:44 INFO obteniendo la lista de errores
+2025-10-28 16:50:47 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:50:48 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 16:50:56 INFO ingresando al apartado trabajadores
+2025-10-28 16:50:57 INFO Intentando crear trabajador: 1N3SS con rol Secretaria
+2025-10-28 16:50:59 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:50:59 INFO obteniendo la lista de errores
+2025-10-28 16:51:02 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:51:02 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 16:54:38 INFO ingresando al apartado trabajadores
+2025-10-28 16:54:40 INFO Intentando crear trabajador:  con rol 
+2025-10-28 16:54:42 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:54:42 INFO obteniendo la lista de errores
+2025-10-28 16:54:45 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:54:45 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m4[39m
+Received: [31m0[39m
+2025-10-28 16:54:53 INFO ingresando al apartado trabajadores
+2025-10-28 16:54:55 INFO Intentando crear trabajador: Miguel Teran con rol Maestro
+2025-10-28 16:54:56 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:54:56 INFO verificando que exista el trabajador ingresado en la lista
+2025-10-28 16:54:57 INFO obteniendo la lista de errores
+2025-10-28 16:55:00 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:55:03 INFO ingresando al apartado trabajadores
+2025-10-28 16:55:05 INFO Intentando crear trabajador:  con rol Secretaria
+2025-10-28 16:55:06 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:55:06 INFO obteniendo la lista de errores
+2025-10-28 16:55:09 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:55:10 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m1[39m
+Received: [31m0[39m
+2025-10-28 16:55:18 INFO ingresando al apartado trabajadores
+2025-10-28 16:55:20 INFO Intentando crear trabajador:  con rol Maestro
+2025-10-28 16:55:21 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:55:21 INFO obteniendo la lista de errores
+2025-10-28 16:55:24 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:55:24 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:55:32 INFO ingresando al apartado trabajadores
+2025-10-28 16:55:34 INFO Intentando crear trabajador:  con rol 
+2025-10-28 16:55:35 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:55:35 INFO obteniendo la lista de errores
+2025-10-28 16:55:38 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:55:46 INFO ingresando al apartado trabajadores
+2025-10-28 16:55:48 INFO Intentando crear trabajador:  con rol Secretaria
+2025-10-28 16:55:49 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:55:49 INFO obteniendo la lista de errores
+2025-10-28 16:55:52 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:55:53 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m2[39m
+Received: [31m0[39m
+2025-10-28 16:56:01 INFO ingresando al apartado trabajadores
+2025-10-28 16:56:03 INFO Intentando crear trabajador: Raul Quiroga con rol Maestro
+2025-10-28 16:56:04 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:56:04 INFO obteniendo la lista de errores
+2025-10-28 16:56:07 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:56:15 INFO ingresando al apartado trabajadores
+2025-10-28 16:56:17 INFO Intentando crear trabajador: Maria Quiroga con rol 
+2025-10-28 16:56:18 INFO consultando si dicha inserción fue exitosa
+2025-10-28 16:56:18 INFO obteniendo la lista de errores
+2025-10-28 16:56:21 INFO comparando la lista de errores con la cantidad de errores esperados
+2025-10-28 16:56:21 ERROR [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m3[39m
+Received: [31m0[39m
+2025-10-28 17:09:40 INFO ingresando al apartado materias
+2025-10-28 17:09:43 INFO registrando la materia PASTELERIA
+2025-10-28 17:09:45 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:09:49 INFO ingresando al apartado materias
+2025-10-28 17:09:52 INFO registrando la materia CALCULO2
+2025-10-28 17:09:53 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:09:57 INFO ingresando al apartado materias
+2025-10-28 17:10:00 INFO registrando la materia LI
+2025-10-28 17:10:01 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:10:05 INFO ingresando al apartado materias
+2025-10-28 17:10:08 INFO registrando la materia materia  mat
+2025-10-28 17:10:09 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:10:13 INFO ingresando al apartado materias
+2025-10-28 17:10:15 INFO registrando la materia materia  mat
+2025-10-28 17:10:17 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:10:20 INFO ingresando al apartado materias
+2025-10-28 17:10:23 INFO registrando la materia ASDFGHJKLÑQWERTYUIOPZXCBBNMASDFGHJKLÑASDFGHJKLÑÑ
+2025-10-28 17:10:25 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:10:28 INFO ingresando al apartado materias
+2025-10-28 17:10:39 INFO ingresando al apartado materias
+2025-10-28 17:10:49 INFO ingresando al apartado materias
+2025-10-28 17:11:00 INFO ingresando al apartado materias
+2025-10-28 17:24:48 INFO ingresando al apartado materias
+2025-10-28 17:24:51 INFO registrando la materia PASTELERIA
+2025-10-28 17:24:53 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:24:57 INFO ingresando al apartado materias
+2025-10-28 17:25:00 INFO registrando la materia CALCULO2
+2025-10-28 17:25:02 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:25:05 INFO ingresando al apartado materias
+2025-10-28 17:25:08 INFO registrando la materia LI
+2025-10-28 17:25:09 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:25:13 INFO ingresando al apartado materias
+2025-10-28 17:25:16 INFO registrando la materia materia  mat
+2025-10-28 17:25:17 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:25:21 INFO ingresando al apartado materias
+2025-10-28 17:25:23 INFO registrando la materia materia  mat
+2025-10-28 17:25:25 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:25:28 INFO ingresando al apartado materias
+2025-10-28 17:25:31 INFO registrando la materia ASDFGHJKLÑQWERTYUIOPZXCBBNMASDFGHJKLÑASDFGHJKLÑÑ
+2025-10-28 17:25:32 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:25:36 INFO ingresando al apartado materias
+2025-10-28 17:25:39 INFO registrando la materia Curso01
+2025-10-28 17:25:45 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:25:49 INFO ingresando al apartado materias
+2025-10-28 17:25:51 INFO registrando la materia Grupo02
+2025-10-28 17:25:55 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:26:03 INFO ingresando al apartado materias
+2025-10-28 17:26:06 INFO registrando la materia Grupo03
+2025-10-28 17:26:15 INFO ingresando al apartado materias
+2025-10-28 17:26:18 INFO registrando la materia Grupo04
+2025-10-28 17:26:21 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:26:29 INFO ingresando al apartado materias
+2025-10-28 17:26:32 INFO registrando la materia Jo
+2025-10-28 17:26:36 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:26:43 INFO ingresando al apartado materias
+2025-10-28 17:26:46 INFO registrando la materia Lu
+2025-10-28 17:26:55 INFO ingresando al apartado materias
+2025-10-28 17:26:58 INFO registrando la materia Ra
+2025-10-28 17:27:01 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:27:09 INFO ingresando al apartado materias
+2025-10-28 17:27:12 INFO registrando la materia Lo
+2025-10-28 17:27:15 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:27:23 INFO ingresando al apartado materias
+2025-10-28 17:27:26 INFO registrando la materia Mi
+2025-10-28 17:27:29 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:27:37 INFO ingresando al apartado materias
+2025-10-28 17:27:40 INFO registrando la materia CursoLargo1
+2025-10-28 17:27:49 INFO ingresando al apartado materias
+2025-10-28 17:27:52 INFO registrando la materia CursoLargo2
+2025-10-28 17:27:55 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:28:03 INFO ingresando al apartado materias
+2025-10-28 17:28:06 INFO registrando la materia CursoLargo3
+2025-10-28 17:28:10 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:28:17 INFO ingresando al apartado materias
+2025-10-28 17:28:20 INFO registrando la materia CursoLargo4
+2025-10-28 17:28:24 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:28:27 INFO ingresando al apartado materias
+2025-10-28 17:28:30 INFO registrando la materia CursoLargo5
+2025-10-28 17:28:33 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:28:41 INFO ingresando al apartado materias
+2025-10-28 17:28:44 INFO registrando la materia 
+2025-10-28 17:28:47 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:28:55 INFO ingresando al apartado materias
+2025-10-28 17:28:58 INFO registrando la materia 
+2025-10-28 17:29:01 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:29:09 INFO ingresando al apartado materias
+2025-10-28 17:29:12 INFO registrando la materia 
+2025-10-28 17:29:16 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:29:23 INFO ingresando al apartado materias
+2025-10-28 17:29:26 INFO registrando la materia 
+2025-10-28 17:30:07 INFO ingresando al apartado materias
+2025-10-28 17:30:10 INFO registrando la materia 
+2025-10-28 17:30:19 INFO ingresando al apartado materias
+2025-10-28 17:30:22 INFO registrando la materia Grupo21
+2025-10-28 17:30:26 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:30:33 INFO ingresando al apartado materias
+2025-10-28 17:30:36 INFO registrando la materia Grupo22
+2025-10-28 17:30:40 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:30:43 INFO ingresando al apartado materias
+2025-10-28 17:30:46 INFO registrando la materia Grupo23
+2025-10-28 17:30:55 INFO ingresando al apartado materias
+2025-10-28 17:30:58 INFO registrando la materia Grupo24
+2025-10-28 17:31:01 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:31:09 INFO ingresando al apartado materias
+2025-10-28 17:31:12 INFO registrando la materia Grupo25
+2025-10-28 17:31:18 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:31:22 INFO ingresando al apartado materias
+2025-10-28 17:31:25 INFO registrando la materia Grupo26
+2025-10-28 17:31:28 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:43:50 INFO ingresando al apartado materias
+2025-10-28 17:43:53 INFO registrando la materia PASTELERIA
+2025-10-28 17:43:55 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:43:59 INFO ingresando al apartado materias
+2025-10-28 17:44:02 INFO registrando la materia CALCULO2
+2025-10-28 17:44:03 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:44:06 INFO ingresando al apartado materias
+2025-10-28 17:44:09 INFO registrando la materia LI
+2025-10-28 17:44:11 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:44:14 INFO ingresando al apartado materias
+2025-10-28 17:44:17 INFO registrando la materia materia  mat
+2025-10-28 17:44:18 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:44:22 INFO ingresando al apartado materias
+2025-10-28 17:44:24 INFO registrando la materia materia  mat
+2025-10-28 17:44:26 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:44:29 INFO ingresando al apartado materias
+2025-10-28 17:44:32 INFO registrando la materia ASDFGHJKLÑQWERTYUIOPZXCBBNMASDFGHJKLÑASDFGHJKLÑÑ
+2025-10-28 17:44:33 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:44:36 INFO ingresando al apartado materias
+2025-10-28 17:44:39 INFO registrando la materia Curso01
+2025-10-28 17:44:46 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:44:49 INFO ingresando al apartado materias
+2025-10-28 17:44:52 INFO registrando la materia Grupo02
+2025-10-28 17:44:56 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:45:04 INFO ingresando al apartado materias
+2025-10-28 17:45:07 INFO registrando la materia Grupo03
+2025-10-28 17:45:10 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:45:18 INFO ingresando al apartado materias
+2025-10-28 17:45:21 INFO registrando la materia Grupo04
+2025-10-28 17:45:26 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:45:34 INFO ingresando al apartado materias
+2025-10-28 17:45:37 INFO registrando la materia Jo
+2025-10-28 17:45:40 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:45:48 INFO ingresando al apartado materias
+2025-10-28 17:45:51 INFO registrando la materia Lu
+2025-10-28 17:45:55 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:46:03 INFO ingresando al apartado materias
+2025-10-28 17:46:06 INFO registrando la materia Ra
+2025-10-28 17:46:09 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:46:17 INFO ingresando al apartado materias
+2025-10-28 17:46:20 INFO registrando la materia Lo
+2025-10-28 17:46:23 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:46:31 INFO ingresando al apartado materias
+2025-10-28 17:46:34 INFO registrando la materia Mi
+2025-10-28 17:46:38 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:46:45 INFO ingresando al apartado materias
+2025-10-28 17:46:48 INFO registrando la materia CursoLargo1
+2025-10-28 17:46:52 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:47:00 INFO ingresando al apartado materias
+2025-10-28 17:47:03 INFO registrando la materia CursoLargo2
+2025-10-28 17:47:06 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:47:14 INFO ingresando al apartado materias
+2025-10-28 17:47:17 INFO registrando la materia CursoLargo3
+2025-10-28 17:47:20 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:47:27 INFO ingresando al apartado materias
+2025-10-28 17:47:30 INFO registrando la materia CursoLargo4
+2025-10-28 17:47:34 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:47:37 INFO ingresando al apartado materias
+2025-10-28 17:47:40 INFO registrando la materia CursoLargo5
+2025-10-28 17:47:44 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:47:54 INFO ingresando al apartado materias
+2025-10-28 17:47:57 INFO registrando la materia 
+2025-10-28 17:48:01 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:48:09 INFO ingresando al apartado materias
+2025-10-28 17:48:12 INFO registrando la materia 
+2025-10-28 17:48:16 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:48:23 INFO ingresando al apartado materias
+2025-10-28 17:48:26 INFO registrando la materia 
+2025-10-28 17:48:30 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:48:37 INFO ingresando al apartado materias
+2025-10-28 17:48:40 INFO registrando la materia 
+2025-10-28 17:49:22 INFO ingresando al apartado materias
+2025-10-28 17:49:25 INFO registrando la materia 
+2025-10-28 17:49:28 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:49:36 INFO ingresando al apartado materias
+2025-10-28 17:49:39 INFO registrando la materia Grupo21
+2025-10-28 17:49:42 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:49:50 INFO ingresando al apartado materias
+2025-10-28 17:49:53 INFO registrando la materia Grupo22
+2025-10-28 17:49:56 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:49:59 INFO ingresando al apartado materias
+2025-10-28 17:50:02 INFO registrando la materia Grupo23
+2025-10-28 17:50:06 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:50:13 INFO ingresando al apartado materias
+2025-10-28 17:50:16 INFO registrando la materia Grupo24
+2025-10-28 17:50:20 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:50:27 INFO ingresando al apartado materias
+2025-10-28 17:50:30 INFO registrando la materia Grupo25
+2025-10-28 17:50:37 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:50:40 INFO ingresando al apartado materias
+2025-10-28 17:50:43 INFO registrando la materia Grupo26
+2025-10-28 17:50:46 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:56:02 INFO ingresando al apartado materias
+2025-10-28 17:56:05 INFO registrando la materia PASTELERIA
+2025-10-28 17:56:06 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:11 INFO ingresando al apartado materias
+2025-10-28 17:56:14 INFO registrando la materia CALCULO2
+2025-10-28 17:56:15 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:18 INFO ingresando al apartado materias
+2025-10-28 17:56:21 INFO registrando la materia LI
+2025-10-28 17:56:22 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:26 INFO ingresando al apartado materias
+2025-10-28 17:56:29 INFO registrando la materia materia  mat
+2025-10-28 17:56:31 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:34 INFO ingresando al apartado materias
+2025-10-28 17:56:37 INFO registrando la materia materia  mat
+2025-10-28 17:56:38 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:42 INFO ingresando al apartado materias
+2025-10-28 17:56:45 INFO registrando la materia ASDFGHJKLÑQWERTYUIOPZXCBBNMASDFGHJKLÑASDFGHJKLÑÑ
+2025-10-28 17:56:47 INFO comparando el mensaje obtenido con el esperado
+2025-10-28 17:56:50 INFO ingresando al apartado materias
+2025-10-28 17:56:53 INFO registrando la materia Curso01
+2025-10-28 17:57:00 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:57:04 INFO ingresando al apartado materias
+2025-10-28 17:57:07 INFO registrando la materia Grupo02
+2025-10-28 17:57:10 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:57:18 INFO ingresando al apartado materias
+2025-10-28 17:57:21 INFO registrando la materia Grupo03
+2025-10-28 17:57:25 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:57:33 INFO ingresando al apartado materias
+2025-10-28 17:57:36 INFO registrando la materia Grupo04
+2025-10-28 17:57:40 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:57:50 INFO ingresando al apartado materias
+2025-10-28 17:57:53 INFO registrando la materia Jo
+2025-10-28 17:57:56 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:58:04 INFO ingresando al apartado materias
+2025-10-28 17:58:07 INFO registrando la materia Lu
+2025-10-28 17:58:11 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:58:18 INFO ingresando al apartado materias
+2025-10-28 17:58:21 INFO registrando la materia Ra
+2025-10-28 17:58:25 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:58:32 INFO ingresando al apartado materias
+2025-10-28 17:58:35 INFO registrando la materia Lo
+2025-10-28 17:58:39 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:58:47 INFO ingresando al apartado materias
+2025-10-28 17:58:50 INFO registrando la materia Mi
+2025-10-28 17:58:53 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:59:01 INFO ingresando al apartado materias
+2025-10-28 17:59:04 INFO registrando la materia CursoLargo1
+2025-10-28 17:59:07 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:59:15 INFO ingresando al apartado materias
+2025-10-28 17:59:18 INFO registrando la materia CursoLargo2
+2025-10-28 17:59:21 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:59:30 INFO ingresando al apartado materias
+2025-10-28 17:59:32 INFO registrando la materia CursoLargo3
+2025-10-28 17:59:36 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:59:44 INFO ingresando al apartado materias
+2025-10-28 17:59:47 INFO registrando la materia CursoLargo4
+2025-10-28 17:59:50 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 17:59:54 INFO ingresando al apartado materias
+2025-10-28 17:59:56 INFO registrando la materia CursoLargo5
+2025-10-28 18:00:00 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:00:08 INFO ingresando al apartado materias
+2025-10-28 18:00:11 INFO registrando la materia 
+2025-10-28 18:00:14 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:00:22 INFO ingresando al apartado materias
+2025-10-28 18:00:25 INFO registrando la materia 
+2025-10-28 18:00:28 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:00:36 INFO ingresando al apartado materias
+2025-10-28 18:00:39 INFO registrando la materia 
+2025-10-28 18:00:42 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:00:50 INFO ingresando al apartado materias
+2025-10-28 18:00:53 INFO registrando la materia 
+2025-10-28 18:01:35 INFO ingresando al apartado materias
+2025-10-28 18:01:38 INFO registrando la materia 
+2025-10-28 18:01:41 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:01:49 INFO ingresando al apartado materias
+2025-10-28 18:01:52 INFO registrando la materia Grupo21
+2025-10-28 18:01:55 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:02:03 INFO ingresando al apartado materias
+2025-10-28 18:02:06 INFO registrando la materia Grupo22
+2025-10-28 18:02:10 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:02:13 INFO ingresando al apartado materias
+2025-10-28 18:02:16 INFO registrando la materia Grupo23
+2025-10-28 18:02:20 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:02:29 INFO ingresando al apartado materias
+2025-10-28 18:02:31 INFO registrando la materia Grupo24
+2025-10-28 18:02:35 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:02:43 INFO ingresando al apartado materias
+2025-10-28 18:02:46 INFO registrando la materia Grupo25
+2025-10-28 18:02:53 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:02:57 INFO ingresando al apartado materias
+2025-10-28 18:03:00 INFO registrando la materia Grupo26
+2025-10-28 18:03:03 INFO comparando la cantidad de mensajes obtenidos con los esperados
+2025-10-28 18:15:28 INFO ingresando al apartado listas
+2025-10-28 18:15:30 INFO filtrando por genero Mujer
+2025-10-28 18:15:30 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:15:38 INFO ingresando al apartado listas
+2025-10-28 18:15:40 INFO cambiando de pagina
+2025-10-28 18:15:40 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:15:48 INFO ingresando al apartado listas
+2025-10-28 18:15:50 INFO cambiando la cantidad a mostrar a 20
+2025-10-28 18:15:52 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:00 INFO ingresando al apartado listas
+2025-10-28 18:16:02 INFO realizando el filtro
+2025-10-28 18:16:02 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:06 INFO ingresando al apartado listas
+2025-10-28 18:16:08 INFO realizando el filtro
+2025-10-28 18:16:08 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:11 INFO ingresando al apartado listas
+2025-10-28 18:16:13 INFO realizando el filtro
+2025-10-28 18:16:14 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:17 INFO ingresando al apartado listas
+2025-10-28 18:16:19 INFO realizando el filtro
+2025-10-28 18:16:19 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:27 INFO ingresando al apartado listas
+2025-10-28 18:16:29 INFO realizando el filtro
+2025-10-28 18:16:29 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:33 INFO ingresando al apartado listas
+2025-10-28 18:16:35 INFO realizando el filtro
+2025-10-28 18:16:35 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:38 INFO ingresando al apartado listas
+2025-10-28 18:16:40 INFO realizando el filtro
+2025-10-28 18:16:41 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:44 INFO ingresando al apartado listas
+2025-10-28 18:16:46 INFO realizando el filtro
+2025-10-28 18:16:47 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:16:54 INFO ingresando al apartado listas
+2025-10-28 18:16:56 INFO realizando el filtro
+2025-10-28 18:16:56 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:00 INFO ingresando al apartado listas
+2025-10-28 18:17:02 INFO realizando el filtro
+2025-10-28 18:17:02 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:06 INFO ingresando al apartado listas
+2025-10-28 18:17:08 INFO realizando el filtro
+2025-10-28 18:17:08 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:11 INFO ingresando al apartado listas
+2025-10-28 18:17:13 INFO realizando el filtro
+2025-10-28 18:17:13 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:17 INFO ingresando al apartado listas
+2025-10-28 18:17:19 INFO realizando el filtro
+2025-10-28 18:17:19 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:23 INFO ingresando al apartado listas
+2025-10-28 18:17:25 INFO ingresando al apartado de listas tutores
+2025-10-28 18:17:26 INFO realizando el filtro
+2025-10-28 18:17:26 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:29 INFO ingresando al apartado listas
+2025-10-28 18:17:31 INFO ingresando al apartado de listas tutores
+2025-10-28 18:17:32 INFO realizando el filtro
+2025-10-28 18:17:33 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:40 INFO ingresando al apartado listas
+2025-10-28 18:17:43 INFO ingresando al apartado de listas tutores
+2025-10-28 18:17:44 INFO realizando el filtro
+2025-10-28 18:17:44 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:17:53 INFO ingresando al apartado listas
+2025-10-28 18:17:55 INFO ingresando al apartado de listas tutores
+2025-10-28 18:17:56 INFO realizando el filtro
+2025-10-28 18:17:57 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:05 INFO ingresando al apartado listas
+2025-10-28 18:18:06 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:08 INFO realizando el filtro
+2025-10-28 18:18:08 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:16 INFO ingresando al apartado listas
+2025-10-28 18:18:18 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:19 INFO realizando el filtro
+2025-10-28 18:18:19 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:27 INFO ingresando al apartado listas
+2025-10-28 18:18:29 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:30 INFO realizando el filtro
+2025-10-28 18:18:31 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:39 INFO ingresando al apartado listas
+2025-10-28 18:18:41 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:42 INFO realizando el filtro
+2025-10-28 18:18:42 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:49 INFO ingresando al apartado listas
+2025-10-28 18:18:51 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:53 INFO realizando el filtro
+2025-10-28 18:18:53 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:18:56 INFO ingresando al apartado listas
+2025-10-28 18:18:58 INFO ingresando al apartado de listas tutores
+2025-10-28 18:18:59 INFO realizando el filtro
+2025-10-28 18:19:00 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:19:07 INFO ingresando al apartado listas
+2025-10-28 18:19:09 INFO ingresando al apartado de listas tutores
+2025-10-28 18:19:10 INFO realizando el filtro
+2025-10-28 18:19:11 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:19:18 INFO ingresando al apartado listas
+2025-10-28 18:19:20 INFO ingresando al apartado de listas tutores
+2025-10-28 18:19:21 INFO realizando el filtro
+2025-10-28 18:19:22 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:19:30 INFO ingresando al apartado listas
+2025-10-28 18:19:32 INFO ingresando al apartado de listas tutores
+2025-10-28 18:19:33 INFO realizando el filtro
+2025-10-28 18:19:33 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:19:41 INFO ingresando al apartado listas
+2025-10-28 18:19:43 INFO ingresando al apartado de listas tutores
+2025-10-28 18:19:44 INFO realizando el filtro
+2025-10-28 18:19:44 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:19:52 INFO ingresando al apartado listas
+2025-10-28 18:19:54 INFO ingresando al apartado de listas tutores
+2025-10-28 18:19:55 INFO realizando el filtro
+2025-10-28 18:19:56 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:20:03 INFO ingresando al apartado listas
+2025-10-28 18:20:05 INFO ingresando al apartado de listas tutores
+2025-10-28 18:20:06 INFO realizando el filtro
+2025-10-28 18:20:07 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:20:15 INFO ingresando al apartado listas
+2025-10-28 18:20:17 INFO ingresando al apartado de listas tutores
+2025-10-28 18:20:18 INFO realizando el filtro
+2025-10-28 18:20:18 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:20:26 INFO ingresando al apartado listas
+2025-10-28 18:20:28 INFO ingresando al apartado de listas tutores
+2025-10-28 18:20:29 INFO realizando el filtro
+2025-10-28 18:20:30 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:20:38 INFO ingresando al apartado listas
+2025-10-28 18:20:40 INFO ingresando al apartado de listas tutores
+2025-10-28 18:20:41 INFO realizando el filtro
+2025-10-28 18:20:42 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:20:50 INFO ingresando al apartado listas
+2025-10-28 18:20:51 INFO ingresando al apartado de listas tutores
+2025-10-28 18:20:53 INFO realizando el filtro
+2025-10-28 18:20:53 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:21:01 INFO ingresando al apartado listas
+2025-10-28 18:21:02 INFO ingresando al apartado de listas tutores
+2025-10-28 18:21:04 INFO realizando el filtro
+2025-10-28 18:21:04 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:21:12 INFO ingresando al apartado listas
+2025-10-28 18:21:14 INFO ingresando al apartado de listas tutores
+2025-10-28 18:21:15 INFO realizando el filtro
+2025-10-28 18:21:16 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:21:24 INFO ingresando al apartado listas
+2025-10-28 18:21:26 INFO ingresando al apartado de listas tutores
+2025-10-28 18:21:27 INFO realizando el filtro
+2025-10-28 18:21:28 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:21:36 INFO ingresando al apartado listas
+2025-10-28 18:21:38 INFO ingresando al apartado de listas tutores
+2025-10-28 18:21:39 INFO realizando el filtro
+2025-10-28 18:21:39 INFO comparando resultados obtenidos con esperados
+2025-10-28 18:21:47 INFO ingresando al apartado listas
+2025-10-28 18:21:49 INFO ingresando al apartado de listas tutores
+2025-10-28 18:21:50 INFO realizando el filtro
+2025-10-28 18:21:50 INFO comparando resultados obtenidos con esperados

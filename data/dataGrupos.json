@@ -189,7 +189,7 @@
     "nombre": "",
     "precio": "-10",
     "cantidad": "",
-    "dias": ["Martes", "Viernes"],
+    "dias": ["Martes", "Lunes"],
     "hora": "09:30",
     "pased": false,
     "errores": 3
