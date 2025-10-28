@@ -7,7 +7,7 @@ import { TieneTutorPage } from "../pages/tieneTutorPage.js";
 import { RegistroTutorPage } from "../pages/registroTutorPage.js";
 import { ListasPage } from "../pages/listasPage.js";
 dotenv.config();
-import { faker } from "@faker-js/faker";
+import { fakerES  } from "@faker-js/faker";
 
 export const test = base.extend({
   loginFixture: async ({ page }, use) => {
@@ -29,13 +29,13 @@ export const test = base.extend({
     await registro.gotoRegistro();
     Logger.info("Llenar datos estudiante");
     const datosFaker = {
-      nombre: faker.person.firstName(),
-      apellido: faker.person.lastName(),
-      fechaNacimiento: faker.date
+      nombre: fakerES.person.firstName(),
+      apellido: fakerES.person.lastName(),
+      fechaNacimiento: fakerES.date
         .birthdate({ min: 1990, max: 2020, mode: "year" })
         .toISOString()
         .split("T")[0],
-      genero: faker.helpers.arrayElement(["Hombre", "Mujer"]),
+      genero: fakerES.helpers.arrayElement(["Hombre", "Mujer"]),
     };
     Logger.debug(datosFaker);
     await registro.llenarDatos(datosFaker);
@@ -81,15 +81,15 @@ export const test = base.extend({
     const registro = new RegistroTutorPage(datosTutores);
     Logger.info("Llenar datos tutor");
     const datosFaker = {
-      nombre: faker.person.firstName(),
-      apellido: faker.person.lastName(),
-      fechaNacimiento: faker.date
+      nombre: fakerES.person.firstName(),
+      apellido: fakerES.person.lastName(),
+      fechaNacimiento: fakerES.date
         .birthdate({ min: 1990, max: 2020, mode: "year" })
         .toISOString()
         .split("T")[0],
-      genero: faker.helpers.arrayElement(["Hombre", "Mujer"]),
-      correo: faker.internet.email(),
-      relacion: faker.helpers.arrayElement(["Padre", "Madre", "Tutor legal"]),
+      genero: fakerES.helpers.arrayElement(["Hombre", "Mujer"]),
+      correo: fakerES.internet.email(),
+      relacion: fakerES.helpers.arrayElement(["Padre", "Madre", "Tutor legal"]),
     };
     Logger.debug(datosFaker);
     await registro.llenarDatos(datosFaker);

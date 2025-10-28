@@ -10,3 +10,5 @@ node_modules/
 .github
 .env
 package-lock.json
+allure-results
+reports

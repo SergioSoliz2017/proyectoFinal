@@ -1,0 +1,271 @@
+[
+    { "tipeTest": "sin texto, sin fechas, Mujer y Tia",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Mujer", 
+    "relacion": "Tia", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin texto, sin fechas, sin filtro y Madre",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Madre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin texto, con fechas, Hombre y Tio",  
+    "texto": "", 
+    "fechaIni": "1980-03-03",  
+    "fechaFin": "1980-03-12",  
+    "genero": "Hombre", 
+    "relacion": "Tio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, Hombre y Tutor legal",  
+    "texto": "Mesa", 
+    "fechaIni": "1980-03-05",  
+    "fechaFin": "1980-03-10",  
+    "genero": "Hombre", 
+    "relacion": "Tutor legal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, sin filtro y Tio",  
+    "texto": "Michael", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Tio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, Hombre y Tia",  
+    "texto": "Raul", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Hombre", 
+    "relacion": "Tia", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, Mujer y Abuelo",  
+    "texto": "Dania", 
+    "fechaIni": "1980-03-02",  
+    "fechaFin": "1980-03-09",  
+    "genero": "Mujer", 
+    "relacion": "Abuelo", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, sin filtro y Abuela",  
+    "texto": "Dania", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Abuela", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin filtro, sin filtro y Tia",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Tia", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Hombre y Abuelo",  
+    "texto": "", 
+    "fechaIni": "1980-03-08",  
+    "fechaFin": "1980-03-14",  
+    "genero": "Hombre", 
+    "relacion": "Abuelo", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin filtro, Mujer y Abuela",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Mujer", 
+    "relacion": "Abuela", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, sin filtro y Tutor legal",  
+    "texto": "", 
+    "fechaIni": "1980-03-03",  
+    "fechaFin": "1980-03-12",  
+    "genero": "", 
+    "relacion": "Tutor legal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin filtro, Hombre y No tiene",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Hombre", 
+    "relacion": "No tiene", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, sin filtro y Abuelo",  
+    "texto": "Damian", 
+    "fechaIni": "1980-03-01",  
+    "fechaFin": "1980-03-15",  
+    "genero": "", 
+    "relacion": "Abuelo", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, Hombre y Abuela",  
+    "texto": "Dania", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Hombre", 
+    "relacion": "Abuela", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Mujer y Tutor legal",  
+    "texto": "", 
+    "fechaIni": "1980-03-05",  
+    "fechaFin": "1980-03-10",  
+    "genero": "Mujer", 
+    "relacion": "Tutor legal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, sin filtro y No tiene",  
+    "texto": "Raul", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "No tiene", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, Hombre y Padre",  
+    "texto": "Raul", 
+    "fechaIni": "1980-03-02",  
+    "fechaFin": "1980-03-11",  
+    "genero": "Hombre", 
+    "relacion": "Padre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, Mujer y Madre",  
+    "texto": "Rosalia", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Mujer", 
+    "relacion": "Madre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Mujer y No tiene",  
+    "texto": "", 
+    "fechaIni": "1980-03-03",  
+    "fechaFin": "1980-03-09",  
+    "genero": "Mujer", 
+    "relacion": "No tiene", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin filtro, sin filtro y Padre",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Padre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin filtro, Hombre y Madre",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Hombre", 
+    "relacion": "Madre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, sin fechas, sin filtro y Abuela",  
+    "texto": "", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Abuela", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Hombre y Tutor legal",  
+    "texto": "", 
+    "fechaIni": "1980-03-08",  
+    "fechaFin": "1980-03-13",  
+    "genero": "Hombre", 
+    "relacion": "Tutor legal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, Hombre y Tio",  
+    "texto": "Michael", 
+    "fechaIni": "1980-03-05",  
+    "fechaFin": "1980-03-14",  
+    "genero": "Hombre", 
+    "relacion": "Tio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, Mujer y Tia",  
+    "texto": "Clara", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "Mujer", 
+    "relacion": "Tia", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, con fechas, Mujer y Padre",  
+    "texto": "Clara", 
+    "fechaIni": "1980-03-03",  
+    "fechaFin": "1980-03-15",  
+    "genero": "Mujer", 
+    "relacion": "Padre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con filtro, sin filtro, sin filtro y Madre",  
+    "texto": "Rosalia", 
+    "fechaIni": "",  
+    "fechaFin": "",  
+    "genero": "", 
+    "relacion": "Madre", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Mujer y Tio",  
+    "texto": "", 
+    "fechaIni": "1980-03-09",  
+    "fechaFin": "1980-03-15",  
+    "genero": "Mujer", 
+    "relacion": "Tio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin filtro, con fechas, Mujer y Abuelo",  
+    "texto": "", 
+    "fechaIni": "1980-03-02",  
+    "fechaFin": "1980-03-11",  
+    "genero": "Mujer", 
+    "relacion": "Abuelo", 
+    "resultados": 1 
+    }
+]

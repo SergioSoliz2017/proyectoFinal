@@ -1,0 +1,118 @@
+[
+    { "tipeTest": "sin texto, con fechas, Hombre y colegio Fiscal",  
+    "texto": "", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "Hombre", 
+    "colegio": "Fiscal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin texto, sin fechas, Mujer y colegio Particular", 
+    "texto": "", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "Mujer", 
+    "colegio": "Particular", 
+    "resultados": 2 
+    },
+
+    { "tipeTest": "con texto, con fechas, Mujer y colegio Convenio", 
+    "texto": "Nicol", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "Mujer", 
+    "colegio": "Convenio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con texto, sin fechas, sin genero y sin colegio", 
+    "texto": "Lis", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "", 
+    "colegio": "", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con texto, sin fechas, Hombre y colegio Particular", 
+    "texto": "Andres", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "Hombre", 
+    "colegio": "Particular", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin texto, sin fechas, sin genero y colegio Particular", 
+    "texto": "", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "", 
+    "colegio": "Particular", 
+    "resultados": 3 
+    },
+
+    { "tipeTest": "sin texto, con fechas, Hombre y colegio Convenio", 
+    "texto": "", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "Hombre", 
+    "colegio": "Convenio", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "sin texto, sin fechas, Mujer y sin colegio", 
+    "texto": "", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "Mujer", 
+    "colegio": "", 
+    "resultados": 3 
+    },
+
+    { "tipeTest": "sin texto, con fechas, sin genero y colegio Fiscal", 
+    "texto": "", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "", 
+    "colegio": "Fiscal", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con texto, con fechas, Mujer y colegio Fiscal", 
+    "texto": "Vero", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "Mujer", 
+    "colegio": "Fiscal", 
+    "resultados": 0 
+    },
+
+    { "tipeTest": "con texto, sin fechas, sin genero y colegio Particular", 
+    "texto": "Lis", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "", 
+    "colegio": "Particular", 
+    "resultados": 1 
+    },
+
+    { "tipeTest": "con texto, con fechas, sin genero y colegio Convenio", 
+    "texto": "Lis", 
+    "fechaIni": "2005-03-01", 
+    "fechaFin": "2005-03-15", 
+    "genero": "", 
+    "colegio": "Convenio", 
+    "resultados": 0 
+    },
+
+    { "tipeTest": "con texto, sin fechas, Hombre y sin colegio", 
+    "texto": "Jose", 
+    "fechaIni": "", 
+    "fechaFin": "", 
+    "genero": "Hombre", 
+    "colegio": "", 
+    "resultados": 1 
+    }
+]

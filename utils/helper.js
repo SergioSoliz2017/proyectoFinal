@@ -13,13 +13,16 @@ export function screenshotPath(name) {
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir, { recursive: true });
   }
+
   const ts = new Date()
     .toISOString()
     .replace(/[-:]/g, "")
     .replace("T", "_")
     .split(".")[0];
 
-  return path.join(outDir, `${ts}_${name}.png`);
+  const safeName = name.replace(/[<>:"/\\|?*]/g, "_");
+
+  return path.join(outDir, `${ts}_${safeName}.png`);
 }
 
 const logsDir = path.join(process.cwd(), "logs");
