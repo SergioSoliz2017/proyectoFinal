@@ -33,7 +33,7 @@ jobs:
       - name: Create .env file
         run: |
           echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
-          echo "HEADLESS=${{ secrets.HEADLESS }}" >> .env
+          echo "HEADLESS=false" >> .env
           echo "EMAIL=${{ secrets.EMAIL }}" >> .env
           echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
 
