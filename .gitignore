@@ -7,6 +7,5 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 .env
-package-lock.json
 allure-results
 reports
