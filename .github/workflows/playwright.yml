@@ -1,0 +1,63 @@
+name: Playwright Tests with Allure Report - InfinityChess
+
+on:
+  push:
+    branches: [main , gitActions]
+  pull_request:
+    branches: [main , gitActions]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # descargando todo el contenido pues
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # configuración del node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # instalación de dependencias
+      - name: Install dependencies
+        run: npm ci
+
+      # intalación de navegadores
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      # importante creación del .env con los secretos
+      - name: Create .env file
+        run: |
+          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
+          echo "HEADLESS=${{ secrets.HEADLESS }}" >> .env
+          echo "EMAIL=${{ secrets.EMAIL }}" >> .env
+          echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
+
+      # ejecución de test cases
+      - name: Run Playwright tests
+        run: npx playwright test
+
+      # generación del reporte allure
+      - name: Generate Allure report
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
+
+      # cubiendo el reporte pa descargar
+      - name: Upload Allure report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      # publicación de reporte en githubPages(no probado)
+      - name: Deploy Allure report to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
