@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "BASE_URL=https://sistema.clubinfinitychess.com/" >> .env
           echo "HEADLESS=false" >> .env
-          echo "EMAIL=${{ secrets.EMAIL }}" >> .env
+          echo "USER=${{ secrets.EMAIL }}" >> .env
           echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
 
       # observar si lar variables del .env fueron creadas
