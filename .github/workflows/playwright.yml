@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "BASE_URL=https://sistema.clubinfinitychess.com/" >> .env
           echo "HEADLESS=false" >> .env
-          echo "USER=${{ secrets.EMAIL }}" >> .env
+          echo "USER=${{ secrets.USER }}" >> .env
           echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
 
       # observar si lar variables del .env fueron creadas
@@ -49,7 +49,7 @@ jobs:
       - name: Check env vars
         run: |
           echo "Verificando variables de entorno:"
-          env | grep -E 'BASE_URL|EMAIL|PASSWORD|HEADLESS' | sed 's/=.*/=<oculto>/'
+          env | grep -E 'BASE_URL|USER|PASSWORD|HEADLESS' | sed 's/=.*/=<oculto>/'
 
       # ejecución de test cases
       - name: Run Playwright tests
