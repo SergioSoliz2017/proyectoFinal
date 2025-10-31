@@ -32,10 +32,24 @@ jobs:
       # importante creación del .env con los secretos
       - name: Create .env file
         run: |
-          echo "BASE_URL=${{ secrets.BASE_URL }}" >> .env
+          echo "BASE_URL=https://sistema.clubinfinitychess.com/" >> .env
           echo "HEADLESS=false" >> .env
           echo "EMAIL=${{ secrets.EMAIL }}" >> .env
           echo "PASSWORD=${{ secrets.PASSWORD }}" >> .env
+
+      # observar si lar variables del .env fueron creadas
+      - name: Debug .env creation
+        run: |
+          echo "Contenido del .env (solo claves):"
+          grep -o '^[^=]*' .env || echo ".env está vacío o no existe"
+          echo "Verificando tamaño (bytes):"
+          ls -l .env
+
+      #observar el .env
+      - name: Check env vars
+        run: |
+          echo "Verificando variables de entorno:"
+          env | grep -E 'BASE_URL|EMAIL|PASSWORD|HEADLESS' | sed 's/=.*/=<oculto>/'
 
       # ejecución de test cases
       - name: Run Playwright tests
