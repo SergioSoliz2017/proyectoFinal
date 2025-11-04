@@ -15,6 +15,7 @@ export default defineConfig({
   expect: {
     timeout: 5000,
   },
+  workers: 1,
   fullyParallel: false,
   use: {
     baseURL: process.env.BASE_URL || "https://sistema.clubinfinitychess.com/",
