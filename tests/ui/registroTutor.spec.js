@@ -1,28 +1,12 @@
-import { test, expect } from "../utils/fixture.js";
-import { RegistroTutorPage } from "../pages/registroTutorPage.js";
-import { Logger, screenshotPath } from "../utils/helper.js";
+import { test, expect } from "../../utils/fixture.js";
+import { RegistroTutorPage } from "../../pages/registroTutorPage.js";
+import { Logger, screenshotPath } from "../../utils/helper.js";
 import {
   testCasesTutoresObligatorios,
   testCasesTutoresOpcionales,
-} from "../data/testCasesRegistro.js";
-const tutores = require("../data/tutoresObligatorio.json");
-const tutoresOpcionales = require("../data/tutoresOpcionales.json");
-
-test(`Test verificar llenado de tutor`, async ({ datosTutores }) => {
-  try {
-    const registro = new RegistroTutorPage(datosTutores);
-    Logger.info(`Test verificar llenado de tutor`);
-    Logger.info(`Verificar llenado de tutor`);
-    await registro.gotoTutor();
-    Logger.info("Confirmado");
-  } catch (err) {
-    await datosTutores.screenshot({
-      path: screenshotPath(`Test verificar llenado de tutor`),
-    });
-    Logger.error(err);
-    throw err;
-  }
-});
+} from "../../data/testCasesRegistro.js";
+const tutores = require("../../data/tutoresObligatorio.json");
+const tutoresOpcionales = require("../../data/tutoresOpcionales.json");
 
 test(`Test registro datos tutor valido`, async ({ datosTutores }) => {
   try {

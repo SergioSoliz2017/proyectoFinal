@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/loginPage.js";
-import { Logger, screenshotPath } from "../utils/helper.js";
-const USERS = require("../data/users.json");
+import { LoginPage } from "../../pages/loginPage.js";
+import { Logger, screenshotPath } from "../../utils/helper.js";
+const USERS = require("../../data/users.json");
 
-test.describe("Login tests", () => {
+test.describe("Login", () => {
   const testCases = [
     { key: "Usuario valido_Contraseña valida", expectSuccess: true }, // caso exitoso
     { key: "Usuario valido_Contraseña invalida", expectSuccess: false }, // contraseña incorrecta
@@ -81,6 +81,56 @@ test(`Test login con enter`, async ({ page }) => {
     const loggedIn = await login.isLoggedIn();
     expect(loggedIn).toBe(true);
     Logger.info("Login exitoso");
+  } catch (err) {
+    await page.screenshot({
+      path: screenshotPath(`Test login con enter`),
+    });
+    Logger.error(err);
+
+    throw err;
+  }
+});
+
+test(`Test login logout`, async ({ page }) => {
+  try {
+    const login = new LoginPage(page);
+    Logger.info(`Test login con enter`);
+    Logger.info("Abrir pagina de login");
+    await login.gotoLogin("/");
+    Logger.debug(`Usuario: 20251030SERGI`);
+    Logger.debug(`Contraseña: 123123`);
+    await login.login("20251030SERGI", "123123");
+    const loggedIn = await login.isLoggedIn();
+    expect(loggedIn).toBe(true);
+    Logger.info("Login exitoso");
+    Logger.info("Cerrar sesion");
+    await login.gotoLogout();
+  } catch (err) {
+    await page.screenshot({
+      path: screenshotPath(`Test logout`),
+    });
+    Logger.error(err);
+
+    throw err;
+  }
+});
+
+test(`Test atras de logout`, async ({ page }) => {
+  try {
+    const login = new LoginPage(page);
+    Logger.info(`Test login con enter`);
+    Logger.info("Abrir pagina de login");
+    await login.gotoLogin("/");
+    Logger.debug(`Usuario: 20251030SERGI`);
+    Logger.debug(`Contraseña: 123123`);
+    await login.login("20251030SERGI", "123123");
+    const loggedIn = await login.isLoggedIn();
+    expect(loggedIn).toBe(true);
+    Logger.info("Login exitoso");
+    Logger.info("Cerrar sesion");
+    await login.gotoLogout();
+    Logger.info("Ir atras");
+    await login.pageGoBack();
   } catch (err) {
     await page.screenshot({
       path: screenshotPath(`Test login con enter`),

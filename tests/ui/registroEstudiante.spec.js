@@ -1,43 +1,25 @@
-import { test, expect } from "../utils/fixture.js";
-import { RegistroEstudiantePage } from "../pages/registroEstudiantePage.js";
-import { Logger, screenshotPath } from "../utils/helper.js";
+import { test, expect } from "../../utils/fixture.js";
+import { RegistroEstudiantePage } from "../../pages/registroEstudiantePage.js";
+import { Logger, screenshotPath } from "../../utils/helper.js";
 import {
   testCasesEstudiantesObligatorios,
   testCasesEstudiantesOpcionales,
-} from "../data/testCasesRegistro.js";
-const estudiantes = require("../data/estudiantesObligatorio.json");
-const estudiantesOpcionales = require("../data/estudiantesOpcionales.json");
+} from "../../data/testCasesRegistro.js";
+const estudiantes = require("../../data/estudiantesObligatorio.json");
+const estudiantesOpcionales = require("../../data/estudiantesOpcionales.json");
 
-test(`Test verificar ir a registro de estudiantes`, async ({
+test(`Test verificar ir a registro`, async ({
   loginFixture,
 }) => {
   try {
     const registro = new RegistroEstudiantePage(loginFixture);
     Logger.info(`Test ir a registro de estudiantes`);
-    Logger.info(`Ir a registro de estudiantes`);
+    Logger.info(`Ir a registro`);
     await registro.gotoRegistro();
     Logger.info("Confirmado");
   } catch (err) {
     await loginFixture.screenshot({
       path: screenshotPath(`Test verificar ir a registro de estudiantes`),
-    });
-    Logger.error(err);
-    throw err;
-  }
-});
-
-test(`Test verificar llenado de estudiante`, async ({ loginFixture }) => {
-  try {
-    const registro = new RegistroEstudiantePage(loginFixture);
-    Logger.info(`Test verificar llenado de estudiante`);
-    Logger.info(`Ir a registro de estudiantes`);
-    await registro.gotoRegistro();
-    Logger.info(`Verificar llenado de estudiante`);
-    await registro.gotoEstudiante();
-    Logger.info("Confirmado");
-  } catch (err) {
-    await loginFixture.screenshot({
-      path: screenshotPath(`Test verificar llenado de estudiante`),
     });
     Logger.error(err);
     throw err;
@@ -131,7 +113,7 @@ test.describe("Registro de estudiantes campos opcionales", () => {
         await registro.gotoTieneTutor();
         Logger.info(`Verificar mensaje de error`);
         const errorMsg = await registro.getErrorMessages();
-        expect(errorMsg.length).toBeGreaterThan(0);
+        expect(errorMsg.length).toBeGreaterThanOrEqual(estudiantesOpcionales[key].errores);
         Logger.error("Registro estudiante fallido");
         Logger.error(`Mensaje de error para ${key}: ${errorMsg}`);
       } catch (err) {

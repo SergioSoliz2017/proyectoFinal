@@ -7,6 +7,9 @@ export class LoginPage {
     this.passwordInput = 'input[id="contraseña"]';
     this.loginButton = '//*[@id="root"]/div/div[1]/div/div[2]/button';
     this.error_msg = "//div[@role='status' and @aria-live='polite']";
+    this.logoutButton = this.page.getByRole("button", {
+      name: "Cerrar sesion",
+    });
   }
 
   async gotoLogin() {
@@ -55,5 +58,14 @@ export class LoginPage {
     } catch (e) {
       return false;
     }
+  }
+  async gotoLogout() {
+    await this.logoutButton.click();
+    await expect(this.page).toHaveURL("/");
+  }
+
+  async pageGoBack() {
+    await this.page.goBack();
+    await expect(this.page).toHaveURL("/");
   }
 }

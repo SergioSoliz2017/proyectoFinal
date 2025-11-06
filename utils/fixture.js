@@ -59,7 +59,7 @@ export const test = base.extend({
     await registro.llenarDatos({
       nombre: "Carlos",
       apellido: "Perez",
-      fechaNacimiento: "2019-01-01",
+      fechaNacimiento: "2000-01-01",
       genero: "Hombre",
     });
     Logger.info("Datos llenado");

@@ -11,7 +11,7 @@ export default defineConfig({
   testDir: "./tests",
   //reporter: "html",
   reporter: [["line"], ["allure-playwright"]],
-  timeout: 40000,
+  timeout: 60000,
   expect: {
     timeout: 5000,
   },

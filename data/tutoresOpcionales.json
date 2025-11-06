@@ -84,7 +84,7 @@
     "ocupacion": "HR"
   },
   "caso_15": {
-    "descripcion": "celular < 7 - alternativo vacio - ocupacion > 40",
+    "descripcion": "  ",
     "celular": "3456",
     "alternativo": "",
     "ocupacion": "Asistente administrativo en empresa multinacional de comercio electrónico"

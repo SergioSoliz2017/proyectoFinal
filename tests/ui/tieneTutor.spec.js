@@ -1,6 +1,6 @@
-import { test, expect } from "../utils/fixture.js";
-import { TieneTutorPage } from "../pages/tieneTutorPage.js";
-import { Logger } from "../utils/helper.js";
+import { test, expect } from "../../utils/fixture.js";
+import { TieneTutorPage } from "../../pages/tieneTutorPage.js";
+import { Logger, screenshotPath } from "../../utils/helper.js";
 
 test(`Test si tiene tutor`, async ({ datosEstudiantes }) => {
   try {

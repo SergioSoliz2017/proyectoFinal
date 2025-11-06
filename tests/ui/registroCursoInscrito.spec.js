@@ -1,15 +1,15 @@
-import { test, expect } from "../utils/fixture.js";
-import { RegistroCursoInscritoPage } from "../pages/registroCursoInscrito.js";
-import { Logger, screenshotPath } from "../utils/helper.js";
+import { test, expect } from "../../utils/fixture.js";
+import { RegistroCursoInscritoPage } from "../../pages/registroCursoInscritoPage.js";
+import { Logger, screenshotPath } from "../../utils/helper.js";
 import {
   testCasesRegistroCursoInscrito,
   testCasesPagoCursos,
   testCasesDescuentos,
   testCasesDescuentosLista,
-} from "../data/testCasesRegistro.js";
-import { ListasPage } from "../pages/listasPage.js";
-const registroCursosInscritos = require("../data/cursosIncritos.json");
-const pagoCursosInscritos = require("../data/pagoCursosInscritos.json");
+} from "../../data/testCasesRegistro.js";
+import { ListasPage } from "../../pages/listasPage.js";
+const registroCursosInscritos = require("../../data/cursosIncritos.json");
+const pagoCursosInscritos = require("../../data/pagoCursosInscritos.json");
 
 test(`Test registro de nuevo curso inscrito valido`, async ({ cursos }) => {
   try {
