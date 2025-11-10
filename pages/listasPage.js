@@ -19,6 +19,19 @@ export class ListasPage {
         this.registrosCantidadSelect = this.page.getByRole('button', { name: /Filas por página:/ });
         this.previusPageButton = this.page.locator('button[title="Previous page"]');
         this.nextPageButton = this.page.locator('button[title="Next page"]');
+        //editar información
+        this.editarInformacionButton = this.page.locator('svg[data-icon="pen-to-square"]');
+        this.guardarInformacionButton = this.page.locator('svg[data-icon="floppy-disk"]');
+
+        this.nombreEditarInput = this.page.locator('input[placeholder="Nombre"]');
+        this.apellidoEditarInput = this.page.locator('input[placeholder="Apellido"]');
+        this.fechaNacimientoEditarInput = this.page.locator('input[placeholder="FechaNacimiento"]');
+        this.colegioEditarInput = this.page.locator('input[placeholder="Colegio"]');
+        this.direccionEditarInput = this.page.locator('input[placeholder="Dirección"]');
+        this.ciudadEditarInput = this.page.locator('input[placeholder="Ciudad"]');
+        this.departamentoEditarInput = this.page.locator('input[placeholder="Departamento"]');
+        this.paisEditarInput = this.page.locator('input[placeholder="País"]');
+        this.celularEditarInput = this.page.locator('input[placeholder="Celular"]');
     }
 
     async gotoListas() {
@@ -95,6 +108,98 @@ export class ListasPage {
     }
     async nextPage(){
         await this.nextPageButton.click();
+    }
+
+    async editarInformacionEstudiante(codEstudiante, nuevoNombre, neuvoApellido, fechaNacimiento, colegio, direccion, ciudad, departamento, pais) {
+        const filaEstudiante = this.page.locator('tr', { hasText: codEstudiante });
+        //const filaEstudiante = this.page.locator('tr', { hasText: nombreEstudiante }).filter({hasText: apellidoEstudiante});
+        // boton inf
+        const botonInformacion = filaEstudiante.locator('div[title="Información del estudiante"]');
+        await expect(botonInformacion.first()).toBeVisible();
+        await botonInformacion.click();
+        
+        await this.editarInformacionButton.click();
+        
+        if(nuevoNombre){
+            await this.nombreEditarInput.fill(`${nuevoNombre}`);
+        }
+        if(neuvoApellido){
+            await this.apellidoEditarInput.fill(`${neuvoApellido}`);
+        }
+        if(fechaNacimiento){
+            await this.fechaNacimientoEditarInput.fill(`${fechaNacimiento}`);   
+        }
+        if(colegio){
+            await this.colegioEditarInput.fill(`${colegio}`);
+        }
+        if(direccion){
+            await this.direccionEditarInput.fill(`${direccion}`);
+        }
+        if(ciudad){
+            await this.ciudadEditarInput.fill(`${ciudad}`);
+        }
+        if(departamento){
+            await this.departamentoEditarInput.fill(`${departamento}`);
+        }
+        if(pais){
+            await this.paisEditarInput.fill(`${pais}`);
+        }
+        await this.guardarInformacionButton.click();
+        await this.page.waitForTimeout(2000);
+    }
+
+       async editarInformacionTutor(codigoTutor , nuevoNombre, neuvoApellido, fechaNacimiento, celular) {
+        const filaTutor = this.page.locator('tr', { hasText: codigoTutor });
+
+        // boton inf
+        const botonInformacion = filaTutor.locator('div[title="Información del tutor"]');
+        await expect(botonInformacion.first()).toBeVisible();
+        await botonInformacion.click();
+        
+        await this.editarInformacionButton.click();
+        
+        if(nuevoNombre){
+            await this.nombreEditarInput.fill(`${nuevoNombre}`);
+        }
+        if(neuvoApellido){
+            await this.apellidoEditarInput.fill(`${neuvoApellido}`);
+        }
+        if(fechaNacimiento){
+            await this.fechaNacimientoEditarInput.fill(`${fechaNacimiento}`);   
+        }
+        if(celular){
+            await this.celularEditarInput.fill(`${celular}`);
+        }
+        await this.guardarInformacionButton.click();
+        await this.page.waitForTimeout(2000);
+        // Esperar a que aparezca el mensaje de éxito
+        //await expect(this.page.locator('h2.swal2-title')).toHaveText('Cambio realizado');
+        // Cerrar el mensaje
+        //await this.page.locator('button.swal2-confirm').click();
+    }
+
+    async getErrorMessages() {
+        const locators = this.page.locator(this.error_msg);
+        try {
+        await locators.first().waitFor({ state: "visible", timeout: 3000 });
+        const count = await locators.count();
+        const messages = [];
+        for (let i = 0; i < count; i++) {
+            const element = locators.nth(i);
+            if (await element.isVisible()) {
+            const text = await element.textContent();
+            if (text) {
+                const trimmedText = text.trim();
+                if (trimmedText !== "Inicio Correcto") {
+                messages.push(trimmedText);
+                }
+            }
+            }
+        }
+        return messages;
+        } catch (e) {
+        return [];
+        }
     }
 }
 

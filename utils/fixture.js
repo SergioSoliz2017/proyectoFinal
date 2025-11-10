@@ -10,7 +10,7 @@ export const test = base.extend({
     const loginPage = new LoginPage(page);
     await loginPage.gotoLogin();
     await loginPage.login(
-      process.env.USER,
+      process.env.USER_LOGIN,
       process.env.PASSWORD
     );
     await page.waitForURL('https://sistema.clubinfinitychess.com/home/*', { timeout: 15000 });

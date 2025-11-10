@@ -2,10 +2,59 @@ import { test, expect } from "../../utils/fixture.js";
 import { ListasPage } from "../../pages/listasPage.js";
 import listFiltrosEstudiantes from "../../data/dataFiltroEstudiante.json";
 import listFiltrosTurores from "../../data/dataFiltroTutor.json";
+import listDatosEstudiantes from "../../data/dataEditarInformacionEstudiante.json";
+import listDatosTutores from "../../data/dataEditarInformacionTutor.json";
+
 import { Logger, screenshotPath } from "../../utils/helper.js"; 
 //import users from "../../data/users.json" assert { type: "json" };
 
+for (const datosEstudiante of listDatosEstudiantes) {
+    test(`@ui @negative editar información Estudiante : "${datosEstudiante.tipeTest}"`, async ({ loginFixture }) => {
+        const listasPage = new ListasPage(loginFixture);
+        Logger.info("ingresando al apartado listas");
+        await listasPage.gotoListas();
+        try{
+        Logger.info("editando información de estudiante");
+        await listasPage.editarInformacionEstudiante("20251018JUAMOR",datosEstudiante.nombre, datosEstudiante.apellido, datosEstudiante.fecha, datosEstudiante.colegio, datosEstudiante.direccion, datosEstudiante.ciudad, datosEstudiante.departamento, datosEstudiante.pais);
+        Logger.info("verificando si existen mensajes de error");
+        if(!datosEstudiante.pased){
+            const errorMsg = await listasPage.getErrorMessages();
+            Logger.info("comparando la cantidad de mensajes obtenidos con los esperados");
+            expect(errorMsg.length).toBe(1);
+        }
+        } catch (err) {
+            await loginFixture.screenshot({ path: screenshotPath(`ERROR AL editar los datos de etudiante ${datosEstudiante.tipeTest}`) });
+            Logger.error(err);
+            throw err;
+        }
+    });
+}
 
+for (const datosTutor of listDatosTutores) {
+    test(`@ui @negative editar información Tutor : "${datosTutor.tipeTest}"`, async ({ loginFixture }) => {
+        const listasPage = new ListasPage(loginFixture);
+        Logger.info("ingresando al apartado listas");
+        await listasPage.gotoListas();
+        Logger.info("ingresando al apartado listas de tutores");
+        await listasPage.gotoTutores();
+        try{
+        Logger.info("editando información de estudiante");
+        await listasPage.editarInformacionTutor("20251018JUAMOR",datosTutor.nombre, datosTutor.apellido, datosTutor.fecha, datosTutor.celular);
+        Logger.info("verificando si existen mensajes de error");
+        if(!datosTutor.pased){
+            const errorMsg = await listasPage.getErrorMessages();
+            Logger.info("comparando la cantidad de mensajes obtenidos con los esperados");
+            expect(errorMsg.length).toBe(1);
+        }
+        } catch (err) {
+            await loginFixture.screenshot({ path: screenshotPath(`ERROR AL editar datos de tutor ${datosTutor.tipeTest}`) });
+            Logger.error(err);
+            throw err;
+        }
+    });
+}
+
+/*
 test("@ui @negative Validar borrado de filtros", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
     Logger.info("ingresando al apartado listas");
@@ -106,4 +155,4 @@ for (const filtroT of listFiltrosTurores) {
         }
     });
 }
-
+*/
