@@ -8,7 +8,7 @@ import {
 const tutores = require("../../data/tutoresObligatorio.json");
 const tutoresOpcionales = require("../../data/tutoresOpcionales.json");
 
-test(`Test registro datos tutor valido`, async ({ datosTutores }) => {
+test(`@ui @functional @positive Test registro datos tutor valido`, async ({ datosTutores }) => {
   try {
     const registro = new RegistroTutorPage(datosTutores);
     Logger.info(`Test verificar llenado de tutor`);
@@ -46,7 +46,7 @@ test(`Test registro datos tutor valido`, async ({ datosTutores }) => {
 test.describe("Registro de tutores campos obligatorios", () => {
   const testCases = testCasesTutoresObligatorios;
   for (const { key, expectSuccess } of testCases) {
-    test(`Test registro datos obligatorios de tutores: ${tutores[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro datos obligatorios de tutores: ${tutores[key].descripcion}`, async ({
       datosTutores,
     }) => {
       try {
@@ -79,7 +79,7 @@ test.describe("Registro de tutores campos obligatorios", () => {
 test.describe("Registro de tutor campos opcionales", () => {
   const testCases = testCasesTutoresOpcionales;
   for (const { key } of testCases) {
-    test(`Test registro datos opcionales de tutores: ${tutoresOpcionales[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro datos opcionales de tutores: ${tutoresOpcionales[key].descripcion}`, async ({
       datosTutores,
     }) => {
       try {

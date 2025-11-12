@@ -2,7 +2,7 @@ import { test, expect } from "../../utils/fixture.js";
 import { TieneTutorPage } from "../../pages/tieneTutorPage.js";
 import { Logger, screenshotPath } from "../../utils/helper.js";
 
-test(`Test si tiene tutor`, async ({ datosEstudiantes }) => {
+test(`@ui @functional Test si tiene tutor`, async ({ datosEstudiantes }) => {
   try {
     Logger.info(`Test si tiene tutor`);
     const tieneTutor = new TieneTutorPage(datosEstudiantes);
@@ -19,7 +19,7 @@ test(`Test si tiene tutor`, async ({ datosEstudiantes }) => {
   }
 });
 
-test(`Test no tiene tutor`, async ({ datosEstudiantesNoTutor }) => {
+test(`@ui @functional Test no tiene tutor`, async ({ datosEstudiantesNoTutor }) => {
   try {
     Logger.info(`Test no tiene tutor`);
     const tieneTutor = new TieneTutorPage(datosEstudiantesNoTutor);
@@ -36,7 +36,7 @@ test(`Test no tiene tutor`, async ({ datosEstudiantesNoTutor }) => {
   }
 });
 
-test(`Test existe tiene tutor`, async ({ datosEstudiantes }) => {
+test(`@ui @functional Test existe tiene tutor`, async ({ datosEstudiantes }) => {
   try {
     Logger.info(`Test existe tiene tutor`);
     const tieneTutor = new TieneTutorPage(datosEstudiantes);
@@ -59,7 +59,7 @@ test(`Test existe tiene tutor`, async ({ datosEstudiantes }) => {
   }
 });
 
-test(`Test existe tiene tutor y relacion No tiene`, async ({
+test(`@ui @functional Test existe tiene tutor y relacion No tiene`, async ({
   datosEstudiantes,
 }) => {
   try {
@@ -88,7 +88,7 @@ test(`Test existe tiene tutor y relacion No tiene`, async ({
   }
 });
 
-test(`Test existe tiene tutor y tutor no existe`, async ({
+test(`@ui @functional Test existe tiene tutor y tutor no existe`, async ({
   datosEstudiantes,
 }) => {
   try {

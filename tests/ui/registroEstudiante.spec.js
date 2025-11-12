@@ -26,7 +26,7 @@ test(`Test verificar ir a registro`, async ({
   }
 });
 
-test(`Test registro datos estudiante valido`, async ({ loginFixture }) => {
+test(`@ui @functional @positive Test registro datos estudiante valido`, async ({ loginFixture }) => {
   try {
     const registro = new RegistroEstudiantePage(loginFixture);
     Logger.info(`Test verificar llenado de estudiante`);
@@ -62,7 +62,7 @@ test(`Test registro datos estudiante valido`, async ({ loginFixture }) => {
 test.describe("Registro de estudiantes campos obligatorios", () => {
   const testCases = testCasesEstudiantesObligatorios;
   for (const { key, expectSuccess } of testCases) {
-    test(`Test registro datos obligatorios de estudiantes: ${estudiantes[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro datos obligatorios de estudiantes: ${estudiantes[key].descripcion}`, async ({
       loginFixture,
     }) => {
       try {
@@ -97,7 +97,7 @@ test.describe("Registro de estudiantes campos obligatorios", () => {
 test.describe("Registro de estudiantes campos opcionales", () => {
   const testCases = testCasesEstudiantesOpcionales;
   for (const { key } of testCases) {
-    test(`Test registro datos opcionales de estudiantes: ${estudiantesOpcionales[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro datos opcionales de estudiantes: ${estudiantesOpcionales[key].descripcion}`, async ({
       loginFixture,
     }) => {
       try {

@@ -11,7 +11,7 @@ import { ListasPage } from "../../pages/listasPage.js";
 const registroCursosInscritos = require("../../data/cursosIncritos.json");
 const pagoCursosInscritos = require("../../data/pagoCursosInscritos.json");
 
-test(`Test registro de nuevo curso inscrito valido`, async ({ cursos }) => {
+test(`@ui @functional @positive Test registro de nuevo curso inscrito valido`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar registro de curso inscrito valido`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -40,7 +40,7 @@ test(`Test registro de nuevo curso inscrito valido`, async ({ cursos }) => {
   }
 });
 
-test(`Test registro de nuevo curso inscrito valido - listas`, async ({
+test(`@ui @functional @positive Test registro de nuevo curso inscrito valido - listas`, async ({
   listas,
 }) => {
   try {
@@ -73,7 +73,7 @@ test(`Test registro de nuevo curso inscrito valido - listas`, async ({
   }
 });
 
-test(`Test registro de pago nuevo curso inscrito valido`, async ({
+test(`@ui @functional @positive Test registro de pago nuevo curso inscrito valido`, async ({
   cursos,
 }) => {
   try {
@@ -120,7 +120,7 @@ test(`Test registro de pago nuevo curso inscrito valido`, async ({
   }
 });
 
-test(`Test registro de pago nuevo curso inscrito valido - listas`, async ({
+test(`@ui @functional @positive Test registro de pago nuevo curso inscrito valido - listas`, async ({
   listas,
 }) => {
   try {
@@ -177,7 +177,7 @@ test.describe("Verificacion descuentos", () => {
     tipo,
     opcionInput,
   } of testCases) {
-    test(`Test verificar descuento: ${key} - ${tipo}`, async ({ cursos }) => {
+    test(`@ui @functional @positive Test verificar descuento: ${key} - ${tipo}`, async ({ cursos }) => {
       try {
         Logger.info(`Test verificar descuento ${tipo}}`);
         const registro = new RegistroCursoInscritoPage(cursos);
@@ -296,7 +296,7 @@ test.describe("Verificacion descuentos", () => {
   }
 });
 
-test(`Test verificar cambio icono descuento`, async ({ cursos }) => {
+test(`@ui @functional @positive Test verificar cambio icono descuento`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar cambio icono descuento`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -321,7 +321,7 @@ test(`Test verificar cambio icono descuento`, async ({ cursos }) => {
   }
 });
 
-test(`Test verificar cambio icono descuento total`, async ({ cursos }) => {
+test(`@ui @functional @positive Test verificar cambio icono descuento total`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar cambio icono descuento total`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -348,7 +348,7 @@ test(`Test verificar cambio icono descuento total`, async ({ cursos }) => {
   }
 });
 
-test(`Test verificar cambio icono descuento - listas`, async ({ listas }) => {
+test(`@ui @functional @positive Test verificar cambio icono descuento - listas`, async ({ listas }) => {
   try {
     Logger.info(`Test verificar cambio icono descuento - listas`);
     const registro = new RegistroCursoInscritoPage(listas);
@@ -373,7 +373,7 @@ test(`Test verificar cambio icono descuento - listas`, async ({ listas }) => {
   }
 });
 
-test(`Test verificar cambio icono descuento total - listas`, async ({
+test(`@ui @functional @positive Test verificar cambio icono descuento total - listas`, async ({
   listas,
 }) => {
   try {
@@ -404,7 +404,7 @@ test(`Test verificar cambio icono descuento total - listas`, async ({
   }
 });
 
-test(`Test verificar cambio icono descuento diferente`, async ({ cursos }) => {
+test(`@ui @functional @positive Test verificar cambio icono descuento diferente`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar cambio icono descuento diferente`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -430,7 +430,8 @@ test(`Test verificar cambio icono descuento diferente`, async ({ cursos }) => {
     throw err;
   }
 });
-test(`Test verificar cambio icono descuento diferente - listas`, async ({
+
+test(`@ui @functional @positive Test verificar cambio icono descuento diferente - listas`, async ({
   listas,
 }) => {
   try {
@@ -461,7 +462,7 @@ test(`Test verificar cambio icono descuento diferente - listas`, async ({
   }
 });
 
-test(`Test verificar curso inscrito en horario`, async ({ cursos }) => {
+test(`@ui @functional @positive Test verificar curso inscrito en horario`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar curso inscrito en horario`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -492,7 +493,7 @@ test(`Test verificar curso inscrito en horario`, async ({ cursos }) => {
   }
 });
 
-test(`Test verificar eliminar curso inscrito en horario`, async ({
+test(`@ui @functional @positive Test verificar eliminar curso inscrito en horario`, async ({
   cursos,
 }) => {
   try {
@@ -538,7 +539,7 @@ test(`Test verificar eliminar curso inscrito en horario`, async ({
   }
 });
 
-test(`Test verificar curso inscrito en horario - listas`, async ({
+test(`@ui @functional @positive Test verificar curso inscrito en horario - listas`, async ({
   listas,
 }) => {
   try {
@@ -571,7 +572,7 @@ test(`Test verificar curso inscrito en horario - listas`, async ({
   }
 });
 
-test(`Test verificar eliminar curso inscrito en horario - listas`, async ({
+test(`@ui @functional @positive Test verificar eliminar curso inscrito en horario - listas`, async ({
   listas,
 }) => {
   try {
@@ -619,7 +620,7 @@ test(`Test verificar eliminar curso inscrito en horario - listas`, async ({
   }
 });
 
-test(`Test verificar registro sin cursos inscritos`, async ({ cursos }) => {
+test(`@ui @functional @negative Test verificar registro sin cursos inscritos`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar registro sin cursos inscritos`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -638,7 +639,7 @@ test(`Test verificar registro sin cursos inscritos`, async ({ cursos }) => {
   }
 });
 
-test(`Test verificar registro sin cursos inscritos - listas`, async ({
+test(`@ui @functional @negative Test verificar registro sin cursos inscritos - listas`, async ({
   listas,
 }) => {
   try {
@@ -661,7 +662,7 @@ test(`Test verificar registro sin cursos inscritos - listas`, async ({
   }
 });
 
-test(`Test verificar registro virtual completado`, async ({ cursos }) => {
+test(`@ui @functional @positive Test verificar registro virtual completado`, async ({ cursos }) => {
   try {
     Logger.info(`Test verificar registro virtual completado`);
     const registro = new RegistroCursoInscritoPage(cursos);
@@ -698,7 +699,7 @@ test(`Test verificar registro virtual completado`, async ({ cursos }) => {
   }
 });
 
-test(`Test verificar registro virtual completado - listas`, async ({
+test(`@ui @functional @positive Test verificar registro virtual completado - listas`, async ({
   listas,
 }) => {
   try {
@@ -737,7 +738,7 @@ test(`Test verificar registro virtual completado - listas`, async ({
   }
 });
 
-test(`Test verificar registro curso sin tutor seleccionado - listas`, async ({
+test(`@ui @functional @negative Test verificar registro curso sin tutor seleccionado - listas`, async ({
   loginFixture,
 }) => {
   try {
@@ -766,7 +767,7 @@ test(`Test verificar registro curso sin tutor seleccionado - listas`, async ({
 test.describe("Registro de cursos inscritos", () => {
   const testCases = testCasesRegistroCursoInscrito;
   for (const { key } of testCases) {
-    test(`Test registro de nuevo curso inscrito: ${registroCursosInscritos[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro de nuevo curso inscrito: ${registroCursosInscritos[key].descripcion}`, async ({
       cursos,
     }) => {
       try {
@@ -813,7 +814,7 @@ test.describe("Registro de cursos inscritos", () => {
 test.describe("Registro de pago cursos inscritos", () => {
   const testCases = testCasesPagoCursos;
   for (const { key } of testCases) {
-    test(`Test registro de pago nuevo curso inscrito: ${pagoCursosInscritos[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro de pago nuevo curso inscrito: ${pagoCursosInscritos[key].descripcion}`, async ({
       cursos,
     }) => {
       try {
@@ -863,7 +864,7 @@ test.describe("Registro de pago cursos inscritos", () => {
 test.describe("Registro de cursos inscritos lista", () => {
   const testCases = testCasesRegistroCursoInscrito;
   for (const { key } of testCases) {
-    test(`Test registro de nuevo curso inscrito lista: ${registroCursosInscritos[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro de nuevo curso inscrito lista: ${registroCursosInscritos[key].descripcion}`, async ({
       listas,
     }) => {
       try {
@@ -910,7 +911,7 @@ test.describe("Registro de cursos inscritos lista", () => {
 test.describe("Registro de pago cursos inscritos lista", () => {
   const testCases = testCasesPagoCursos;
   for (const { key } of testCases) {
-    test(`Test registro de pago nuevo curso inscrito lista : ${pagoCursosInscritos[key].descripcion}`, async ({
+    test(`@ui @functional @negative Test registro de pago nuevo curso inscrito lista : ${pagoCursosInscritos[key].descripcion}`, async ({
       listas,
     }) => {
       try {

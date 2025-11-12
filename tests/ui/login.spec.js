@@ -22,7 +22,7 @@ test.describe("Login", () => {
   ];
 
   for (const { key, expectSuccess } of testCases) {
-    test(`Test login con credenciales: ${key}`, async ({ page }) => {
+    test(`@ui @functional Test login con credenciales: ${key}`, async ({ page }) => {
       try {
         const login = new LoginPage(page);
         Logger.info(`Test login con credenciales: ${key}`);
@@ -69,7 +69,7 @@ test.describe("Login", () => {
   }
 });
 
-test(`Test login con enter`, async ({ page }) => {
+test(`@ui @functional Test login con enter`, async ({ page }) => {
   try {
     const login = new LoginPage(page);
     Logger.info(`Test login con enter`);
@@ -91,7 +91,7 @@ test(`Test login con enter`, async ({ page }) => {
   }
 });
 
-test(`Test login logout`, async ({ page }) => {
+test(`@ui @functional Test login logout`, async ({ page }) => {
   try {
     const login = new LoginPage(page);
     Logger.info(`Test login con enter`);
@@ -115,7 +115,7 @@ test(`Test login logout`, async ({ page }) => {
   }
 });
 
-test(`Test atras de logout`, async ({ page }) => {
+test(`@ui @functional Test atras de logout`, async ({ page }) => {
   try {
     const login = new LoginPage(page);
     Logger.info(`Test login con enter`);
