@@ -131,7 +131,7 @@
     "rol": "", 
     "contraseña": "contraseña",
     "pased": false,
-    "errores": 2
+    "errores": 3
     },
 
     { "tipeTest": "con nombre < a 3 caracteres y contraseña > a 15 caracteres",  

@@ -54,8 +54,7 @@ for (const datosTutor of listDatosTutores) {
     });
 }
 
-/*
-test("@ui @negative Validar borrado de filtros", async ({ loginFixture }) => {
+test("@ui @negative Validar borrado de filtros Estudiantes", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
     Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
@@ -77,7 +76,31 @@ test("@ui @negative Validar borrado de filtros", async ({ loginFixture }) => {
     }
 });
 
-test("@ui @negative Cambiar pagina", async ({ loginFixture }) => {
+test("@ui @negative Validar borrado de filtros Tutores", async ({ loginFixture }) => {
+    const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
+    await listasPage.gotoListas();
+    Logger.info("ingresando al apartado de listas tutores");
+    await listasPage.gotoTutores();
+    Logger.info("filtrando por genero Mujer");
+    await listasPage.buscarFiltroOptions("Tia");
+    Logger.info("comparando resultados obtenidos con esperados");
+    const cantidadFiltros = await listasPage.resultadoFiltro();
+    expect(cantidadFiltros).toBe(2);
+    try{
+    Logger.info("borrando el filtro anterior");
+    await listasPage.recargarListas();
+    Logger.info("comparando resultados obtenidos con esperados");
+    const cantidadFiltros2 = await listasPage.resultadoFiltro();
+    expect(cantidadFiltros2).toBe(5);
+    } catch (err) {
+        await loginFixture.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador con ${trabajador.tipeTest}`) });
+        Logger.error(err);
+        throw err;
+    }
+});
+
+test("@ui @negative Cambiar pagina Estudiantes", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
     Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
@@ -99,7 +122,31 @@ test("@ui @negative Cambiar pagina", async ({ loginFixture }) => {
     }
 });
 
-test("@ui @negative Validar cantidad a mostrar por pagina", async ({ loginFixture }) => {
+test("@ui @negative Cambiar pagina Tutores", async ({ loginFixture }) => {
+    const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
+    await listasPage.gotoListas();
+    Logger.info("ingresando al apartado de listas tutores");
+    await listasPage.gotoTutores();
+    try{
+    Logger.info("cambiando de pagina");
+    await listasPage.nextPage();
+    Logger.info("comparando resultados obtenidos con esperados");
+    const siguientePagina = await listasPage.resultadoFiltro();
+    expect(siguientePagina).toBe(5);
+    Logger.info("retornando a la anterior pagina");
+    await listasPage.previusPage();
+    Logger.info("comparando resultados obtenidos con esperados");
+    const anteriorPagina = await listasPage.resultadoFiltro();
+    expect(anteriorPagina).toBe(5);
+    } catch (err) {
+        await loginFixture.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador con ${trabajador.tipeTest}`) });
+        Logger.error(err);
+        throw err;
+    }
+});
+
+test("@ui @negative Validar cantidad a mostrar por pagina Estudiantes", async ({ loginFixture }) => {
     const listasPage = new ListasPage(loginFixture);
     Logger.info("ingresando al apartado listas");
     await listasPage.gotoListas();
@@ -108,7 +155,24 @@ test("@ui @negative Validar cantidad a mostrar por pagina", async ({ loginFixtur
     await listasPage.seleccionarRegistrosPorPagina("20");
     Logger.info("comparando resultados obtenidos con esperados");
     const cantidadFiltros = await listasPage.resultadoFiltro();
-    expect(cantidadFiltros).toBe(7);
+    expect(cantidadFiltros).toBe(20);
+    } catch (err) {
+        await loginFixture.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador con ${trabajador.tipeTest}`) });
+        Logger.error(err);
+        throw err;
+    }
+});
+
+test("@ui @negative Validar cantidad a mostrar por pagina Tutores", async ({ loginFixture }) => {
+    const listasPage = new ListasPage(loginFixture);
+    Logger.info("ingresando al apartado listas");
+    await listasPage.gotoListas();
+    try{
+    Logger.info("cambiando la cantidad a mostrar a 20");
+    await listasPage.seleccionarRegistrosPorPagina("20");
+    Logger.info("comparando resultados obtenidos con esperados");
+    const cantidadFiltros = await listasPage.resultadoFiltro();
+    expect(cantidadFiltros).toBe(20);
     } catch (err) {
         await loginFixture.screenshot({ path: screenshotPath(`ERROR AL ingresar trabajador con ${trabajador.tipeTest}`) });
         Logger.error(err);
@@ -155,4 +219,3 @@ for (const filtroT of listFiltrosTurores) {
         }
     });
 }
-*/
