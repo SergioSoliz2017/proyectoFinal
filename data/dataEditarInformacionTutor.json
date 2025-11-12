@@ -1,0 +1,153 @@
+[
+    { "tipeTest": "con Nombre Vacío",  
+      "nombre": " ", 
+      "apellido": "Cansejo",
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false
+    },
+
+    { "tipeTest": "con Apellido Vacío",  
+      "nombre": "José", 
+      "apellido": " ", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false
+    },
+
+    { "tipeTest": "con Fecha Vacía",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": " ", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Celular Vacío",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": " ",
+      "pased": true
+    },
+
+    { "tipeTest": "con datos validos",  
+      "nombre": "José", 
+      "apellido": "Cansejo",
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": true 
+    },
+
+    { "tipeTest": "con datos con espacio",  
+      "nombre": " ", 
+      "apellido": " ",
+      "fecha": " ", 
+      "celular": " ",
+      "pased": false
+    },
+
+    { "tipeTest": "con Nombre menor a 3 letras",  
+      "nombre": "Jo", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Apellido menor a 3 letras",  
+      "nombre": "José", 
+      "apellido": "Ca", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Fecha futura (2050)",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "2050-01-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Celular mayor a 8 dígitos",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "7944899800",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Nombre mayor a 35 letras",  
+      "nombre": "JoséMiguelAndresFernandoGonzalezPereiraLopez", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998" ,
+      "pased": false
+    },
+
+    { "tipeTest": "con Apellido mayor a 35 letras",  
+      "nombre": "José", 
+      "apellido": "GonzalezPerezFernandezRodriguezMendezCampos", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Fecha cero (0-0-0)",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "0000-00-00", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Celular menor a 8 dígitos",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "7944899",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Nombre con números",  
+      "nombre": "J0s3", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Apellido con números",  
+      "nombre": "José", 
+      "apellido": "C4ns3j0", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Fecha inexistente (31 de mes q no tiene)",  
+      "nombre": "José", 
+      "apellido": "Cansejo", 
+      "fecha": "2023-02-31", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Nombre con caracteres especiales",  
+      "nombre": "J@sé!", 
+      "apellido": "Cansejo", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    },
+
+    { "tipeTest": "con Apellido con caracteres especiales",  
+      "nombre": "José", 
+      "apellido": "Can$ejo!", 
+      "fecha": "2005-03-01", 
+      "celular": "79448998",
+      "pased": false 
+    }
+]

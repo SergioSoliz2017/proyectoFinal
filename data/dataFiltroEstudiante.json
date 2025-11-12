@@ -32,7 +32,7 @@
     "fechaFin": "", 
     "genero": "", 
     "colegio": "", 
-    "resultados": 1 
+    "resultados": 2 
     },
 
     { "tipeTest": "con texto, sin fechas, Hombre y colegio Particular", 
@@ -68,7 +68,7 @@
     "fechaFin": "", 
     "genero": "Mujer", 
     "colegio": "", 
-    "resultados": 3 
+    "resultados": 5 
     },
 
     { "tipeTest": "sin texto, con fechas, sin genero y colegio Fiscal", 
