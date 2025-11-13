@@ -1,0 +1,303 @@
+{
+  "caso_1": {
+    "descripcion": "nombre valido - apellido con numeros - fecha nacimiento vacio - genero no seleccionado",
+    "nombre": "Carlos",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "",
+    "genero": "Seleccione genero"
+  },
+  "caso_2": {
+    "descripcion": "nombre valido - apellido valido - fecha nacimiento futura - genero Hombre",
+    "nombre": "Carlos",
+    "apellido": "Perez",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Hombre"
+  },
+  "caso_3": {
+    "descripcion": "nombre valido - apellido vacio - fecha nacimiento < 5 años - genero no seleccionado",
+    "nombre": "Carlos",
+    "apellido": "",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Seleccione genero"
+  },
+  "caso_4": {
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento < 5 años - genero Mujer",
+    "nombre": "",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Mujer"
+  },
+  "caso_5": {
+    "descripcion": "nombre vacio - apellido < 3 - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Xu",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_6": {
+    "descripcion": "nombre vacio - apellido con simbolos - fecha nacimiento vacio - genero Hombre",
+    "nombre": "",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "",
+    "genero": "Hombre"
+  },
+  "caso_7": {
+    "descripcion": "nombre vacio - apellido con numeros - fecha nacimiento futura - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Seleccione genero"
+  },
+  "caso_8": {
+    "descripcion": "nombre vacio - apellido vacio - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "",
+    "apellido": "",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_9": {
+    "descripcion": "nombre vacio - apellido valido - fecha nacimiento vacio - genero Mujer",
+    "nombre": "",
+    "apellido": "Perez",
+    "fechaNacimiento": "",
+    "genero": "Mujer"
+  },
+  "caso_10": {
+    "descripcion": "nombre > 40 - apellido > 40 - fecha nacimiento valido - genero Hombre",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Hombre"
+  },
+  "caso_11": {
+    "descripcion": "nombre > 40 - apellido < 3 - fecha nacimiento vacio - genero no seleccionado",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "Xu",
+    "fechaNacimiento": "",
+    "genero": "Seleccione genero"
+  },
+  "caso_12": {
+    "descripcion": "nombre > 40 - apellido con simbolos - fecha nacimiento futura - genero Mujer",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Mujer"
+  },
+  "caso_13": {
+    "descripcion": "nombre > 40 - apellido con numeros - fecha nacimiento < 5 años - genero no seleccionado",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Seleccione genero"
+  },
+  "caso_14": {
+    "descripcion": "nombre > 40 - apellido valido - fecha nacimiento futura - genero Hombre",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "Perez",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Hombre"
+  },
+  "caso_15": {
+    "descripcion": "nombre > 40 - apellido vacio - fecha nacimiento < 5 años - genero no seleccionado",
+    "nombre": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "apellido": "",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Seleccione genero"
+  },
+  "caso_16": {
+    "descripcion": "nombre < 3 - apellido < 3 - fecha nacimiento futura - genero no seleccionado",
+    "nombre": "Li",
+    "apellido": "Xu",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Seleccione genero"
+  },
+  "caso_17": {
+    "descripcion": "nombre < 3 - apellido con simbolos - fecha nacimiento < 5 años - genero Mujer",
+    "nombre": "Li",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Mujer"
+  },
+  "caso_18": {
+    "descripcion": "nombre < 3 - apellido con numeros - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "Li",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_19": {
+    "descripcion": "nombre < 3 - apellido valido - fecha nacimiento < 5 años - genero Hombre",
+    "nombre": "Li",
+    "apellido": "Perez",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Hombre"
+  },
+  "caso_20": {
+    "descripcion": "nombre < 3 - apellido vacio - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "Li",
+    "apellido": "",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_21": {
+    "descripcion": "nombre < 3 - apellido > 40 - fecha nacimiento vacio - genero Mujer",
+    "nombre": "Li",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "",
+    "genero": "Mujer"
+  },
+  "caso_22": {
+    "descripcion": "nombre con simbolos - apellido con simbolos - fecha nacimiento valido - genero Hombre",
+    "nombre": "Ana@#",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Hombre"
+  },
+  "caso_23": {
+    "descripcion": "nombre con simbolos - apellido con numeros - fecha nacimiento vacio - genero no seleccionado",
+    "nombre": "Ana@#",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "",
+    "genero": "Seleccione genero"
+  },
+  "caso_24": {
+    "descripcion": "nombre con simbolos - apellido valido - fecha nacimiento valido - genero Mujer",
+    "nombre": "Ana@#",
+    "apellido": "Perez",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Mujer"
+  },
+  "caso_25": {
+    "descripcion": "nombre con simbolos - apellido vacio - fecha nacimiento vacio - genero no seleccionado",
+    "nombre": "Ana@#",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "genero": "Seleccione genero"
+  },
+  "caso_26": {
+    "descripcion": "nombre con simbolos - apellido > 40 - fecha nacimiento futura - genero Hombre",
+    "nombre": "Ana@#",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Hombre"
+  },
+  "caso_27": {
+    "descripcion": "nombre con simbolos - apellido < 3 - fecha nacimiento < 5 años - genero no seleccionado",
+    "nombre": "Ana@#",
+    "apellido": "Xu",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Seleccione genero"
+  },
+  "caso_28": {
+    "descripcion": "nombre con numeros - apellido con numeros - fecha nacimiento futura - genero no seleccionado",
+    "nombre": "Juan123",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Seleccione genero"
+  },
+  "caso_29": {
+    "descripcion": "nombre con numeros - apellido valido - fecha nacimiento < 5 años - genero Mujer",
+    "nombre": "Juan123",
+    "apellido": "Perez",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Mujer"
+  },
+  "caso_30": {
+    "descripcion": "nombre con numeros - apellido vacio - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "Juan123",
+    "apellido": "",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_31": {
+    "descripcion": "nombre con numeros - apellido valido - fecha nacimiento vacio - genero Hombre",
+    "nombre": "Juan123",
+    "apellido": "Perez",
+    "fechaNacimiento": "",
+    "genero": "Hombre"
+  },
+  "caso_32": {
+    "descripcion": "nombre con numeros - apellido vacio - fecha nacimiento futura - genero no seleccionado",
+    "nombre": "Juan123",
+    "apellido": "",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Seleccione genero"
+  },
+  "caso_33": {
+    "descripcion": "nombre con numeros - apellido > 40 - fecha nacimiento < 5 años - genero Mujer",
+    "nombre": "Juan123",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Mujer"
+  },
+  "caso_34": {
+    "descripcion": "nombre con numeros - apellido < 3 - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "Juan123",
+    "apellido": "Xu",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  },
+  "caso_35": {
+    "descripcion": "nombre con numeros - apellido con simbolos - fecha nacimiento vacio - genero Hombre",
+    "nombre": "Juan123",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "",
+    "genero": "Hombre"
+  },
+  "caso_36": {
+    "descripcion": "nombre valido - apellido > 40 - fecha nacimiento valido - genero Mujer",
+    "nombre": "Carlos",
+    "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Mujer"
+  },
+  "caso_37": {
+    "descripcion": "nombre valido - apellido < 3 - fecha nacimiento vacio - genero no seleccionado",
+    "nombre": "Carlos",
+    "apellido": "Xu",
+    "fechaNacimiento": "",
+    "genero": "Seleccione genero"
+  },
+  "caso_38": {
+    "descripcion": "nombre valido - apellido con simbolos - fecha nacimiento futura - genero Hombre",
+    "nombre": "Carlos",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Hombre"
+  },
+  "caso_39": {
+    "descripcion": "nombre valido - apellido con numeros - fecha nacimiento < 5 años - genero no seleccionado",
+    "nombre": "Carlos",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Seleccione genero"
+  },
+  "caso_40": {
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento vacio - genero Mujer",
+      "nombre": "",
+      "apellido": "FernandezMartinezGonzalezRodriguezPerezLopezGarciaHernandezSuarezMorales",
+      "fechaNacimiento": "",
+      "genero": "Mujer"
+  },
+  "caso_41": {
+    "descripcion": "nombre vacio - apellido < 3 - fecha nacimiento futura - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Xu",
+    "fechaNacimiento": "2030-01-01",
+    "genero": "Seleccione genero"
+  },
+  "caso_42": {
+    "descripcion": "nombre vacio - apellido con simbolos - fecha nacimiento < 5 años - genero Hombre",
+    "nombre": "",
+    "apellido": "Lopez!$",
+    "fechaNacimiento": "2022-04-15",
+    "genero": "Hombre"
+  },
+  "caso_43": {
+    "descripcion": "nombre vacio - apellido con numeros - fecha nacimiento valido - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Ramos22",
+    "fechaNacimiento": "2015-06-10",
+    "genero": "Seleccione genero"
+  }
+}

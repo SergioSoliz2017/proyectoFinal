@@ -1,0 +1,164 @@
+{
+  "caso_1": {
+    "descripcion": "celular valido - alternativo < 7 - ocupacion < 3",
+    "celular": "76452389",
+    "alternativo": "12345",
+    "ocupacion": "IT"
+  },
+  "caso_2": {
+    "descripcion": "celular valido - alternativo > 8 - ocupacion > 40",
+    "celular": "72345678",
+    "alternativo": "7654321899",
+    "ocupacion": "Especialista en investigación y desarrollo de tecnologías sostenibles para el medio ambiente"
+  },
+  "caso_3": {
+    "descripcion": "celular valido - alternativo valido - ocupacion con numeros",
+    "celular": "78451236",
+    "alternativo": "76543210",
+    "ocupacion": "Diseñador3D"
+  },
+  "caso_4": {
+    "descripcion": "celular valido - alternativo vacio - ocupacion con simbolos",
+    "celular": "69874523",
+    "alternativo": "",
+    "ocupacion": "Chef & Baker"
+  },
+  "caso_5": {
+    "descripcion": "celular vacia - alternativo vacio - ocupacion < 3",
+    "celular": "",
+    "alternativo": "",
+    "ocupacion": "QA"
+  },
+  "caso_6": {
+    "descripcion": "celular vacia - alternativo < 7 - ocupacion > 40",
+    "celular": "",
+    "alternativo": "45678",
+    "ocupacion": "Profesor titular de la facultad de ciencias exactas y naturales con experiencia internacional"
+  },
+  "caso_7": {
+    "descripcion": "celular vacia - alternativo > 8 - ocupacion con numeros",
+    "celular": "",
+    "alternativo": "7123456789",
+    "ocupacion": "Contador2025"
+  },
+  "caso_8": {
+    "descripcion": "celular vacia - alternativo valido - ocupacion con simbolos",
+    "celular": "",
+    "alternativo": "76458932",
+    "ocupacion": "Diseñador UX/UI!"
+  },
+  "caso_9": {
+    "descripcion": "celular vacia - alternativo vacio - ocupacion valido",
+    "celular": "",
+    "alternativo": "",
+    "ocupacion": "Arquitecto"
+  },
+  "caso_10": {
+    "descripcion": "celular < 7 - alternativo < 7 - ocupacion con numeros",
+    "celular": "12345",
+    "alternativo": "5678",
+    "ocupacion": "Soldador1"
+  },
+  "caso_11": {
+    "descripcion": "celular < 7 - alternativo > 8 - ocupacion con simbolos",
+    "celular": "67890",
+    "alternativo": "7012345678",
+    "ocupacion": "Barista*Pro"
+  },
+  "caso_12": {
+    "descripcion": "celular < 7 - alternativo valido - ocupacion valido",
+    "celular": "34567",
+    "alternativo": "78965432",
+    "ocupacion": "Ingeniero"
+  },
+  "caso_13": {
+    "descripcion": "celular < 7 - alternativo vacio - ocupacion vacio",
+    "celular": "123456",
+    "alternativo": "",
+    "ocupacion": ""
+  },
+  "caso_14": {
+    "descripcion": "celular < 7 - alternativo valido - ocupacion < 3",
+    "celular": "67890",
+    "alternativo": "76451238",
+    "ocupacion": "HR"
+  },
+  "caso_15": {
+    "descripcion": "  ",
+    "celular": "3456",
+    "alternativo": "",
+    "ocupacion": "Asistente administrativo en empresa multinacional de comercio electrónico"
+  },
+  "caso_16": {
+    "descripcion": "celular > 8 - alternativo > 8 - ocupacion valido",
+    "celular": "7123456789",
+    "alternativo": "7894561230",
+    "ocupacion": "Doctor"
+  },
+  "caso_17": {
+    "descripcion": "celular > 8 - alternativo valido - ocupacion vacio",
+    "celular": "7412589632",
+    "alternativo": "76458912",
+    "ocupacion": ""
+  },
+  "caso_18": {
+    "descripcion": "celular > 8 - alternativo vacio - ocupacion < 3",
+    "celular": "7012345678",
+    "alternativo": "",
+    "ocupacion": "UX"
+  },
+  "caso_19": {
+    "descripcion": "celular > 8 - alternativo valido - ocupacion > 40",
+    "celular": "7912345670",
+    "alternativo": "76548912",
+    "ocupacion": "Gerente general de operaciones internacionales en empresa de logística global"
+  },
+  "caso_20": {
+    "descripcion": "celular > 8 - alternativo vacio - ocupacion con numeros",
+    "celular": "7023456789",
+    "alternativo": "",
+    "ocupacion": "Analista2023"
+  },
+  "caso_21": {
+    "descripcion": "celular > 8 - alternativo < 7 - ocupacion con simbolos",
+    "celular": "7132456789",
+    "alternativo": "54321",
+    "ocupacion": "Músico@Jazz"
+  },
+  "caso_22": {
+    "descripcion": "celular valido - alternativo < 7 - ocupacion valido",
+    "celular": "76451238",
+    "alternativo": "12345",
+    "ocupacion": "Abogado"
+  },
+  "caso_23": {
+    "descripcion": "celular valido - alternativo > 8 - ocupacion vacio",
+    "celular": "70985647",
+    "alternativo": "70123456789",
+    "ocupacion": ""
+  },
+  "caso_24": {
+    "descripcion": "celular vacia - alternativo vacio - ocupacion con numeros",
+    "celular": "",
+    "alternativo": "",
+    "ocupacion": "Profesor2024"
+  },
+  "caso_25": {
+    "descripcion": "celular vacia - alternativo < 7 - ocupacion vacio",
+    "celular": "",
+    "alternativo": "6789",
+    "ocupacion": ""
+  },
+  "caso_26": {
+    "descripcion": "celular vacia - alternativo > 8 - ocupacion < 3",
+    "celular": "",
+    "alternativo": "7123456789",
+    "ocupacion": "TI"
+  },
+  "caso_27": {
+    "descripcion": "celular vacia - alternativo valido - ocupacion > 40",
+    "celular": "",
+    "alternativo": "76451238",
+    "ocupacion": "Director ejecutivo de innovación tecnológica en una compañía multinacional"
+  }
+}

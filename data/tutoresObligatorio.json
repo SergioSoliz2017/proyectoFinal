@@ -1,0 +1,416 @@
+{
+  "caso_1": {
+    "descripcion": "nombre vacio - apellido < 3 - fecha nacimiento fechas futura - correo valido - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "Al",
+    "fechaNacimiento": "",
+    "correo": "ana@hotmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_2": {
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento valido - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_3": {
+    "descripcion": "nombre vacio - apellido con simbolo - fecha nacimiento vacio - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "@ana!",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Mujer"
+  },
+  "caso_4": {
+    "descripcion": "nombre vacio - apellido con numero - fecha nacimiento < 5 años - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "sergio@",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_5": {
+    "descripcion": "nombre vacio - apellido vacio - fecha nacimiento valido - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_6": {
+    "descripcion": "nombre vacio - apellido valido - fecha nacimiento vacio - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "Nogales",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Mujer"
+  },
+  "caso_7": {
+    "descripcion": "nombre < 3 - apellido < 3 - fecha nacimiento valido - correo sin @ - relacion seleccionado - genero seleccionado",
+    "nombre": "Al",
+    "apellido": "Al",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Tutor legal",
+    "genero": "Hombre"
+  },
+  "caso_8": {
+    "descripcion": "nombre < 3 - apellido > 40 - fecha nacimiento vacio - correo sin dominio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Al",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "",
+    "correo": "sergio@",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_9": {
+    "descripcion": "nombre < 3 - apellido con simbolo - fecha nacimiento < 5 años - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "Al",
+    "apellido": "@ana!",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "lucia@mail.com",
+    "relacion": "Tia",
+    "genero": "Mujer"
+  },
+  "caso_10": {
+    "descripcion": "nombre < 3 - apellido con numero - fecha nacimiento fechas futura - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Al",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_11": {
+    "descripcion": "nombre < 3 - apellido valido - fecha nacimiento < 5 años - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "Al",
+    "apellido": "Nogales",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "lucia@mail.com",
+    "relacion": "Abuela",
+    "genero": "Mujer"
+  },
+  "caso_12": {
+    "descripcion": "nombre < 3 - apellido vacio - fecha nacimiento fechas futura - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Al",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_13": {
+    "descripcion": "nombre > 40 - apellido > 40 - fecha nacimiento < 5 años - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "",
+    "relacion": "Tio",
+    "genero": "Seleccione genero"
+  },
+  "caso_14": {
+    "descripcion": "nombre > 40 - apellido con simbolo - fecha nacimiento fechas futura - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "@ana!",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_15": {
+    "descripcion": "nombre > 40 - apellido con numero - fecha nacimiento valido - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergio@",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_16": {
+    "descripcion": "nombre > 40 - apellido valido - fecha nacimiento fechas futura - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "Nogales",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_17": {
+    "descripcion": "nombre > 40 - apellido vacio - fecha nacimiento valido - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergio@",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_18": {
+    "descripcion": "nombre > 40 - apellido < 3 - fecha nacimiento vacio - correo valido - relacion no seleccionado - genero seleccionado",
+    "nombre": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "apellido": "Al",
+    "fechaNacimiento": "",
+    "correo": "lucia@mail.com",
+    "relacion": "",
+    "genero": "Hombre"
+  },
+  "caso_19": {
+    "descripcion": "nombre con simbolo - apellido con simbolo - fecha nacimiento valido - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "@ana!",
+    "apellido": "@ana!",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "ana@hotmail.com",
+    "relacion": "Madre",
+    "genero": "Mujer"
+  },
+  "caso_20": {
+    "descripcion": "nombre con simbolo - apellido con numero - fecha nacimiento vacio - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "@ana!",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_21": {
+    "descripcion": "nombre con simbolo - apellido valido - fecha nacimiento valido - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "@ana!",
+    "apellido": "Fernandez",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "ana@hotmail.com",
+    "relacion": "Madre",
+    "genero": "Mujer"
+  },
+  "caso_22": {
+    "descripcion": "nombre con simbolo - apellido vacio - fecha nacimiento vacio - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "@ana!",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_23": {
+    "descripcion": "nombre con simbolo - apellido < 3 - fecha nacimiento < 5 años - correo sin @ - relacion seleccionado - genero seleccionado",
+    "nombre": "@ana!",
+    "apellido": "Al",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Padre",
+    "genero": "Hombre"
+  },
+  "caso_24": {
+    "descripcion": "nombre con simbolo - apellido > 40 - fecha nacimiento fechas futura - correo sin dominio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "@ana!",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "",
+    "correo": "sergio@",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_25": {
+    "descripcion": "nombre con numero - apellido con numero - fecha nacimiento < 5 años - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "sergio@",
+    "relacion": "Tio",
+    "genero": "Seleccione genero"
+  },
+  "caso_26": {
+    "descripcion": "nombre con numero - apellido valido - fecha nacimiento vacio - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "Gomez",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_27": {
+    "descripcion": "nombre con numero - apellido vacio - fecha nacimiento < 5 años - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "sergio@",
+    "relacion": "Abuelo",
+    "genero": "Seleccione genero"
+  },
+  "caso_28": {
+    "descripcion": "nombre con numero - apellido < 3 - fecha nacimiento fechas futura - correo valido - relacion no seleccionado - genero seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "Al",
+    "fechaNacimiento": "",
+    "correo": "lucia@mail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_29": {
+    "descripcion": "nombre con numero - apellido > 40 - fecha nacimiento valido - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "",
+    "relacion": "Abuelo",
+    "genero": "Seleccione genero"
+  },
+  "caso_30": {
+    "descripcion": "nombre con numero - apellido con simbolo - fecha nacimiento vacio - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "Brayan12",
+    "apellido": "@ana!",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_31": {
+    "descripcion": "nombre valido - apellido valido - fecha nacimiento valido - correo sin @ - relacion seleccionado - genero seleccionado",
+    "nombre": "Juan",
+    "apellido": "Nogales",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Padre",
+    "genero": "Hombre"
+  },
+  "caso_32": {
+    "descripcion": "nombre valido - apellido vacio - fecha nacimiento vacio - correo sin dominio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Lucia",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "correo": "sergio@",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_33": {
+    "descripcion": "nombre valido - apellido valido - fecha nacimiento < 5 años - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "Sergio",
+    "apellido": "Soliz",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "ana@hotmail.com",
+    "relacion": "Padre",
+    "genero": "Hombre"
+  },
+  "caso_34": {
+    "descripcion": "nombre valido - apellido vacio - fecha nacimiento fechas futura - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Carlos",
+    "apellido": "",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_35": {
+    "descripcion": "nombre valido - apellido < 3 - fecha nacimiento valido - correo sin @ - relacion seleccionado - genero seleccionado",
+    "nombre": "Brayan",
+    "apellido": "Al",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Tio",
+    "genero": "Hombre"
+  },
+  "caso_36": {
+    "descripcion": "nombre valido - apellido > 40 - fecha nacimiento vacio - correo sin dominio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Valeria",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "",
+    "correo": "sergio@",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_37": {
+    "descripcion": "nombre valido - apellido con simbolo - fecha nacimiento < 5 años - correo valido - relacion seleccionado - genero seleccionado",
+    "nombre": "Ana",
+    "apellido": "@ana!",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "lucia@mail.com",
+    "relacion": "Tia",
+    "genero": "Mujer"
+  },
+  "caso_38": {
+    "descripcion": "nombre valido - apellido con numero - fecha nacimiento fechas futura - correo vacio - relacion no seleccionado - genero no seleccionado",
+    "nombre": "Camila",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "",
+    "correo": "",
+    "relacion": "Seleccione relacion",
+    "genero": "Seleccione genero"
+  },
+  "caso_39": {
+    "descripcion": "nombre vacio - apellido vacio - fecha nacimiento < 5 años - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "",
+    "relacion": "Padre",
+    "genero": "Seleccione genero"
+  },
+  "caso_40": {
+    "descripcion": "nombre vacio - apellido valido - fecha nacimiento fechas futura - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "Perez",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_41": {
+    "descripcion": "nombre vacio - apellido vacio - fecha nacimiento valido - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergio@",
+    "relacion": "Tutor legal",
+    "genero": "Seleccione genero"
+  },
+  "caso_42": {
+    "descripcion": "nombre vacio - apellido < 3 - fecha nacimiento vacio - correo valido - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "Al",
+    "fechaNacimiento": "",
+    "correo": "ana@hotmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Hombre"
+  },
+  "caso_43": {
+    "descripcion": "nombre vacio - apellido > 40 - fecha nacimiento < 5 años - correo vacio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "JuanCarlosFernandezPereiraGonzalezRamirezDelgado",
+    "fechaNacimiento": "2023-10-20",
+    "correo": "",
+    "relacion": "Tutor legal",
+    "genero": "Seleccione genero"
+  },
+  "caso_44": {
+    "descripcion": "nombre vacio - apellido con simbolo - fecha nacimiento fechas futura - correo sin @ - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "@ana!",
+    "fechaNacimiento": "",
+    "correo": "sergiosolizmail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Mujer"
+  },
+  "caso_45": {
+    "descripcion": "nombre vacio - apellido con numero - fecha nacimiento valido - correo sin dominio - relacion seleccionado - genero no seleccionado",
+    "nombre": "",
+    "apellido": "Brayan12",
+    "fechaNacimiento": "2004-06-12",
+    "correo": "sergio@",
+    "relacion": "Tutor legal",
+    "genero": "Seleccione genero"
+  },
+  "caso_46": {
+    "descripcion": "nombre vacio - apellido valido - fecha nacimiento vacio - correo valido - relacion no seleccionado - genero seleccionado",
+    "nombre": "",
+    "apellido": "Gomez",
+    "fechaNacimiento": "",
+    "correo": "lucia@mail.com",
+    "relacion": "Seleccione relacion",
+    "genero": "Mujer"
+  }
+}
