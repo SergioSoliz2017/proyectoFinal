@@ -53,12 +53,14 @@ export class LoginPage {
 
   async isLoggedIn() {
     try {
-      return await this.page.waitForURL("**/home/**", { timeout: 5000 });
+      await this.page.waitForURL("**/home/**", { timeout: 5000 });
+      return true;
     } catch (e) {
       Logger.error(e);
       return false;
     }
   }
+
   async gotoLogout() {
     await this.logoutButton.click();
     await expect(this.page).toHaveURL("/");
