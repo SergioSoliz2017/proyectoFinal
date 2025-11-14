@@ -28,8 +28,8 @@ export class MateriasPage {
         await this.materiasButton.click();
         await expect(this.tituloMaterias).toBeVisible();
     }
-    
-    
+
+
     async ingresarMateria(nombreMateria) {
         await this.newMateriaButton.click();
         await expect(this.ventanaEmergenteNewMateria).toBeVisible();
@@ -61,24 +61,24 @@ export class MateriasPage {
         await this.agregarGrupoButton.click();
 
         //rellenando datos
-        if(nombreGrupo){
+        if (nombreGrupo) {
             await this.nombreGrupoLabel.fill(`${nombreGrupo}`);
         }
-        if(precioGrupo){
+        if (precioGrupo) {
             //await this.precioGrupoLabel.fill(`${precioGrupo}`);
-            await this.precioGrupoLabel.pressSequentially(`${precioGrupo}`); 
+            await this.precioGrupoLabel.pressSequentially(`${precioGrupo}`);
         }
-        if(cantidadGrupo){
+        if (cantidadGrupo) {
             await this.cantidadGrupoLabel.fill(`${cantidadGrupo}`);
         }
-        if(diasGrupo){
+        if (diasGrupo) {
             await this.diasGrupoLabel.click();
             for (const dia of diasGrupo) {
                 await this.page.locator('li.option', { hasText: dia }).click();
             }
         }
         //await this.diasGrupoLabel.fill('Lunes');
-        if(horaGrupo){
+        if (horaGrupo) {
             await this.horaGrupoLabel.selectOption(`${horaGrupo}`);
         }
         await this.grupoMateriasFormularioButton.click();
@@ -88,24 +88,24 @@ export class MateriasPage {
     async getErrorMessages() {
         const locators = this.page.locator(this.error_msg);
         try {
-        await locators.first().waitFor({ state: "visible", timeout: 3000 });
-        const count = await locators.count();
-        const messages = [];
-        for (let i = 0; i < count; i++) {
-            const element = locators.nth(i);
-            if (await element.isVisible()) {
-            const text = await element.textContent();
-            if (text) {
-                const trimmedText = text.trim();
-                if (trimmedText !== "Inicio Correcto") {
-                messages.push(trimmedText);
+            await locators.first().waitFor({ state: "visible", timeout: 3000 });
+            const count = await locators.count();
+            const messages = [];
+            for (let i = 0; i < count; i++) {
+                const element = locators.nth(i);
+                if (await element.isVisible()) {
+                    const text = await element.textContent();
+                    if (text) {
+                        const trimmedText = text.trim();
+                        if (trimmedText !== "Inicio Correcto") {
+                            messages.push(trimmedText);
+                        }
+                    }
                 }
             }
-            }
-        }
-        return messages;
+            return [...new Set(messages)];
         } catch (e) {
-        return [];
+            return [];
         }
     }
 

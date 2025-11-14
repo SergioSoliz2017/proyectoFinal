@@ -5,6 +5,8 @@ export class ListasPage {
     this.page = page;
     this.listasButton = this.page.getByRole("button", { name: "Listas" });
     this.tituloListas = this.page.locator('span:has-text("Listas")');
+    //obtener errores
+    this.error_msg = "//div[@role='status' and @aria-live='polite']";
     //ver estudiantes/tutores
     this.listasEstudiantesButton = this.page.getByRole("button", {
       name: "Estudiantes",
@@ -203,7 +205,7 @@ export class ListasPage {
 
     await this.editarInformacionButton.click();
 
-    if (nuevoNombre) {
+    if (nuevoNombre !== "") {
       await this.nombreEditarInput.fill(`${nuevoNombre}`);
     }
     if (neuvoApellido) {
@@ -241,7 +243,7 @@ export class ListasPage {
           }
         }
       }
-      return messages;
+      return [...new Set(messages)];
     } catch (e) {
       return [];
     }

@@ -6,7 +6,7 @@
       "celular": "79448998",
       "pased": false
     },
-
+ 
     { "tipeTest": "con Apellido Vacío",  
       "nombre": "José", 
       "apellido": " ", 
@@ -98,7 +98,7 @@
     { "tipeTest": "con Fecha cero (0-0-0)",  
       "nombre": "José", 
       "apellido": "Cansejo", 
-      "fecha": "0000-00-00", 
+      "fecha": "0001-01-01", 
       "celular": "79448998",
       "pased": false 
     },

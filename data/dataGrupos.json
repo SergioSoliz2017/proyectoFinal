@@ -73,7 +73,7 @@
     "dias": ["Sabado"],
     "hora": "",
     "pased": false,
-    "errores": 3
+    "errores": 4
   },
 
   {
@@ -84,7 +84,7 @@
     "dias": ["Martes", "Viernes"],
     "hora": "07:00",
     "pased": false,
-    "errores": 2
+    "errores": 3
   },
   {
     "tipeTest": "nombre corto, precio cero, cantidad menor a 15, sin días ni hora",
@@ -94,62 +94,62 @@
     "dias": [],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 5
   },
 
   {
     "tipeTest": "nombre largo, precio con letras, cantidad vacía, varios días, sin hora",
-    "nombre": "CursoLargo1",
+    "nombre": "CursoLargo1CursoLargo1CursoLargo1CursoLargo1CursoLargo1",
     "precio": "40e",
     "cantidad": "",
     "dias": ["Lunes", "Jueves"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 4
   },
 
   {
     "tipeTest": "nombre largo, precio mayor a 999, cantidad cero, sin días, hora válida",
-    "nombre": "CursoLargo2",
+    "nombre": "CursoLargo2CursoLargo2CursoLargo2CursoLargo2CursoLargo2CursoLargo2",
     "precio": "2000",
     "cantidad": "0",
     "dias": [],
     "hora": "13:00",
     "pased": false,
-    "errores": 2
+    "errores": 4
   },
 
   {
     "tipeTest": "nombre largo, precio vacío, cantidad menor a 15, un día, sin hora",
-    "nombre": "CursoLargo3",
+    "nombre": "CursoLargo3CursoLargo3CursoLargo3CursoLargo3CursoLargo3CursoLargo3",
     "precio": "",
     "cantidad": "10",
     "dias": ["Viernes"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 4
   },
 
   {
     "tipeTest": "nombre largo, precio cero, cantidad mayor a 30, varios días, sin hora",
-    "nombre": "CursoLargo4",
+    "nombre": "CursoLargo4CursoLargo4CursoLargo4CursoLargo4CursoLargo4CursoLargo4",
     "precio": "0",
     "cantidad": "35",
     "dias": ["Martes", "Sabado"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 4
   },
 
   {
     "tipeTest": "nombre largo, precio negativo, cantidad válida, un día, sin hora",
-    "nombre": "CursoLargo5",
+    "nombre": "CursoLargo5CursoLargo5CursoLargo5CursoLargo5CursoLargo5",
     "precio": "-10",
     "cantidad": "20",
     "dias": ["Lunes"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 3
   },
 
   {
@@ -160,7 +160,7 @@
     "dias": ["Lunes", "Viernes"],
     "hora": "",
     "pased": false,
-    "errores": 3
+    "errores": 4
   },
   {
     "tipeTest": "nombre vacío, precio vacío, cantidad mayor a 30, un día, sin hora",
@@ -181,7 +181,7 @@
     "dias": ["Miercoles", "Sabado"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 3
   },
 
   {
@@ -189,8 +189,8 @@
     "nombre": "",
     "precio": "-10",
     "cantidad": "",
-    "dias": ["Martes", "Lunes"],
-    "hora": "09:30",
+    "dias": ["Miercoles", "Sabado"],
+    "hora": "09:00",
     "pased": false,
     "errores": 3
   },
@@ -203,7 +203,7 @@
     "dias": [],
     "hora": "14:00",
     "pased": false,
-    "errores": 3
+    "errores": 4
   },
 
   {
@@ -247,7 +247,7 @@
     "dias": ["Miercoles", "Sabado"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 3
   },
 
   {
@@ -269,6 +269,6 @@
     "dias": ["Martes"],
     "hora": "",
     "pased": false,
-    "errores": 2
+    "errores": 3
   }
 ]
