@@ -125,7 +125,7 @@
     "errores": 2
     },
 
-    { "tipeTest": "con nombre < a 3 caracteres y con contraseña",  
+    { "tipeTest": "con nombre < a 3 caracteres sin fecha ni rol y con contraseña",  
     "nombre": "UN", 
     "fecha": "" ,
     "rol": "", 
