@@ -1,4 +1,5 @@
 import { expect } from "@playwright/test";
+import { Logger } from "../utils/helper";
 
 export class LoginPage {
   constructor(page) {
@@ -52,10 +53,9 @@ export class LoginPage {
 
   async isLoggedIn() {
     try {
-      await this.page.waitForURL("**/home/**", { timeout: 5000 });
-      const url = this.page.url();
-      return url.includes("/home/");
+      return await this.page.waitForURL("**/home/**", { timeout: 5000 });
     } catch (e) {
+      Logger.error(e);
       return false;
     }
   }

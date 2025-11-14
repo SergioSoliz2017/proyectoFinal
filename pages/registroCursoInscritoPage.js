@@ -160,8 +160,6 @@ export class RegistroCursoInscritoPage {
           }
         }
       }
-
-      // 🧠 Elimina duplicados antes de devolver
       return [...new Set(messages)];
     } catch (e) {
       return [];

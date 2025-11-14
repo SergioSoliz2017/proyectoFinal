@@ -19,8 +19,8 @@ export const test = base.extend({
     Logger.debug(`Contraseña: ${process.env.PASSWORD}`);
     await loginPage.login(process.env.USER_LOGIN, process.env.PASSWORD);
     const loggedIn = await loginPage.isLoggedIn();
-    Logger.info(`Inicio correcto`);
     expect(loggedIn).toBe(true);
+    Logger.info(`Inicio correcto`);
     await use(page);
   },
   datosEstudiantes: async ({ loginFixture }, use) => {
