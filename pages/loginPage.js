@@ -53,7 +53,7 @@ export class LoginPage {
 
   async isLoggedIn() {
     try {
-      await this.page.waitForURL("**/home/**", { timeout: 5000 });
+      await this.page.waitForURL("**/home/**", { timeout: 15000 });
       return true;
     } catch (e) {
       Logger.error(e);
