@@ -324,16 +324,19 @@ export class RegistroCursoInscritoPage {
       const div = document.querySelector(selector);
       if (div) div.scrollTop = div.scrollHeight; // baja al final
     }, `div${clase}`);
-    const celdas = this.page.locator(`div${clase} table tbody td div${celda}`);
+    const celdas = this.page
+      .locator(`div${clase} table tbody td div${celda}`)
+      .nth(0);
     const existeCurso = await celdas.filter({ hasText: "Curso01" }).count();
     return existeCurso > 0;
   }
 
   async eliminarCursoEnHorario(nombreGrupo, clase, celda) {
-    const celdaGrupo = this.page.locator(
-      `div${clase} table tbody td div${celda}`,
-      { hasText: nombreGrupo }
-    );
+    const celdaGrupo = this.page
+      .locator(`div${clase} table tbody td div${celda}`, {
+        hasText: nombreGrupo,
+      })
+      .nth(0);
 
     await celdaGrupo.click();
   }
